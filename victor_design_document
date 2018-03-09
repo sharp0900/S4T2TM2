@@ -1,0 +1,50 @@
+##Introduction: 
+#Gui: will open up the program to more users
+- easier to error check 
+- easier to get valid input
+
+#sqldatabase: easier to access,store,manipulate data
+
+#Customer: Agile users, anyone can use the program
+#manager: has more permisions
+#employee: normal access
+#two users: manager and employee
+
+#Why would I want to use it: make it really simple to use
+Interface would have: all possible options display, feedback, 
+
+Product Reviews: (Good ideas from other Task Managing Software)
+Seperate tasks into classes
+always have the selected task summary displayed
+each task has a button
+when creating a new task a new window pops up to give task details
+
+Project Overview:
+What is the same? 
+-the options for working with a task are the same
+What is different? 
+- more options for tasks
+- Gui interface
+- Sql database
+
+Project Architecture:
+-Gui Inteface for user
+-logic for handling gui inputs
+-sqldatabase for storing gui formatted input
+
+Requirements:
+
+Use Cases:
+start new task
+stop existing task
+describe new or existing task
+delete existing task
+rename existing task
+size new task or existing task
+
+Tracablity Matrix:
+
+PreConditions & PostConditions:
+
+
+
