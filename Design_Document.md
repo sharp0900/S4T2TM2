@@ -134,15 +134,28 @@
 	1. There is a cancel button users can click instead of renaming.
 	2. If there are no tasks to rename, they can only click "Cancel" to go back to the main menu.
 
-### size new task or existing task
+### 6. Size New or Existing Task
+- **Related Requirements:** TODO
+- **Initiating Actor:** Employee
+- **Actor's Goal:** To add useful information about a task to the database as a description
+- **Participating Actors:** TaskList, Interface, Database
+- **Preconditions:** None
+- **Postconditions:** A task with the given name and size exists.
+- **Flow of Events for Main Success Scenario**
+	1. User selects "Describe Task" button
+	2. A dropdown list of tasks on the database is displayed. User selects one of those, or enters a new one into a text field.
+	3. User types in the description they'd like to add into another text field.
+	4. After hitting submit the given description is stored in the database with the given task name.
+- **Flow of Events for Alternate Scenario**
+	1. If a task already had a description, the program loads that description into the text field so the user can edit, append, or delete it.
 
-### add deadline to new or existing task
+### 7. Add Deadline to New or Existing Task
 - **Related Requirements:** TODO
 - **Initiating Actor:** Employee
 - **Actor's Goal:** To add a deadline to a task in order to plan and prioritize.
 - **Participating Actors:** Task, Interface, Database
 - **Preconditions:** None
-- **Postconditions:** A task with the given name and deadline exists.
+- **Postconditions:** A task with the given name and size exists.
 - **Flow of Events for Main Success Scenario**
 	1. User selects "Add Deadline" button
 	2. A dropdown list of tasks on the database is displayed. User selects one of those, or enters a new one into a text field.
@@ -151,9 +164,24 @@
 - **Flow of Events for Alternate Scenario**
 	1. Program displays an error if the user tries to enter a deadline that is already passed.
 
+### 8. View Stats for Tasks 
+- **Related Requirements:** TODO
+- **Initiating Actor:** Employee
+- **Actor's Goal:** To view stats for tasks in database
+- **Participating Actors:** TaskList, Interface, Database
+- **Preconditions:** None
+- **Postconditions:** None
+- **Flow of Events for Main Success Scenario**
+	1. User selects "View Tasks" button
+	2. Information for all tasks in database is shown, including (if any) size, description, deadlines.
+	3. Statistics including average, minimum, and maximum time are displayed for each size category.
+- **Flow of Events for Alternate Scenario**
+	1. If there are no tasks to display, the program displays "None." 
+	2. Program cannot calculate time on tasks currently in progress.
+	3. Program does not display stats for size categories that have less than 2 entries.
+
 ### edit times for tasks
 
-### view stats for tasks
 
 # Traceability Matrix:
 
