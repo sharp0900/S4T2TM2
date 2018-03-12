@@ -180,7 +180,22 @@
 	2. Program cannot calculate time on tasks currently in progress.
 	3. Program does not display stats for size categories that have less than 2 entries.
 
-### edit times for tasks
+### 9. Edit Times for Tasks
+- **Related Requirements:** TODO
+- **Initiating Actor:** Manager
+- **Actor's Goal:** To make corrections in database
+- **Participating Actors:** TaskList, Interface, Database
+- **Preconditions:** Something inaccurate exists in the database
+- **Postconditions:** Database is accurate
+- **Flow of Events for Main Success Scenario**
+	1. User selects "Edit a Task" button
+	2. A list of all logs in database is displayed.
+	3. User can filter by contributing developer or task name to find the task they'd like to edit.
+	4. User selects task to edit and changes the timestamp manually.
+	5. This change is recorded in the database.
+- **Flow of Events for Alternate Scenario**
+	1. If there are no logs to display, the program displays "None." 
+	2. There is a cancel button users can click instead of editing.
 
 
 # Traceability Matrix:
