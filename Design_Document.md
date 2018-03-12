@@ -33,6 +33,7 @@
 - always have the selected task summary displayed
 - each task has a button
 - when creating a new task a new window pops up to give task details
+- Simple design with sidebar
 
 # Project Overview:
 ### What is the same?
@@ -51,9 +52,19 @@
 
 # Requirements:
 ## Use Cases:
-### start new task
+### 1. start new task 
+- **Related Requirements:** TODO
+- **Initiating Actor:** Employee
+- **Actor's Goal:** To mark the timestamp at which work started on current session
+- **Participating Actors:** Task, Interface, Database
+- **Preconditions:**
+- **Postconditions:**
+- **Flow of Events for Main Success Scenario**
+	1. User selects "Start Task" button
+	2. If they are working on a new task they enter it into a text field. Otherwise, they select the desired task from a drop down menu.
+	3. After hitting submit the name of the task and the current system time is added into the database with the "start" property 
 
-### stop existing task
+### 2. stop existing task
 
 ### describe new or existing task
 
