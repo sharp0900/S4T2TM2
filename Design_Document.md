@@ -57,14 +57,28 @@
 - **Initiating Actor:** Employee
 - **Actor's Goal:** To mark the timestamp at which work started on current session
 - **Participating Actors:** Task, Interface, Database
-- **Preconditions:**
-- **Postconditions:**
+- **Preconditions:**The task selected must not be an active task.
+- **Postconditions:** A task will have been started in the database.
 - **Flow of Events for Main Success Scenario**
 	1. User selects "Start Task" button
 	2. If they are working on a new task they enter it into a text field. Otherwise, they select the desired task from a drop down menu.
 	3. After hitting submit the name of the task and the current system time is added into the database with the "start" property 
+- **Flow of Events for Alternate Scenarios**
+	1. If the use selects a task currently in process, the database displays "That task has already been started at TIMESTAMP"
 
-### 2. stop existing task
+### 2. stop existing task 
+- **Related Requirements:** TODO
+- **Initiating Actor:** Employee
+- **Actor's Goal:** To mark the timestamp at which work stopped on current session
+- **Participating Actors:** Task, Interface, Database
+- **Preconditions:** There is at least one active session in database.
+- **Postconditions:** A session will have a stop entry added.
+- **Flow of Events for Main Success Scenario**
+	1. User selects "Stop Task" button
+	2. A dropdown list of currently active tasks 
+	3. After hitting submit the name of the task and the current system time is added into the database with the "start" property 
+- **Flow of Events for Alternate Scenario**
+	1. There are no currently active tasks. Only active button is a 'Back' button.
 
 ### describe new or existing task
 
