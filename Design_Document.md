@@ -72,7 +72,7 @@
 	2. If they are working on a new task they enter it into a text field. Otherwise, they select the desired task from a drop down menu.
 	3. After hitting submit the name of the task and the current system time is added into the database with the "start" property 
 - **Flow of Events for Alternate Scenarios**
-	1. If the use selects a task currently in process, the database displays "That task has already been started at TIMESTAMP"
+	1. If the use selects a task currently in process, the database displays "That task has already been started at <TIMESTAMP>"
 
 ### 2. Stop Existing Task 
 - **Related Requirements:** TODO
@@ -86,13 +86,13 @@
 	2. A dropdown list of currently active tasks is displayed. The user selects the one they'd like to stop.
 	3. After hitting submit the name of the task and the current system time is added into the database with the "start" property 
 - **Flow of Events for Alternate Scenario**
-	1. There are no currently active tasks. Only active button is a 'Back' button.
+	1. If there are no currently active tasks, the user is notified. The only active button is a 'Back' button.
 
-### describe new or existing task
+### 3. Describe New or Existing Task
 - **Related Requirements:** TODO
 - **Initiating Actor:** Employee
 - **Actor's Goal:** To add useful information about a task to the database as a description
-- **Participating Actors:** Task, Interface, Database
+- **Participating Actors:** TaskList, Interface, Database
 - **Preconditions:** None
 - **Postconditions:** A task with the given name and description exists.
 - **Flow of Events for Main Success Scenario**
@@ -103,9 +103,36 @@
 - **Flow of Events for Alternate Scenario**
 	1. If a task already had a description, the program loads that description into the text field so the user can edit, append, or delete it.
 
-### delete existing task
+### 4. Delete Existing Task
+- **Related Requirements:** TODO
+- **Initiating Actor:** Employee
+- **Actor's Goal:** To archive a task and remove it from the main database
+- **Participating Actors:** TaskList, Interface, Database
+- **Preconditions:** Task to be deleted already exists
+- **Postconditions:** Task no longer appears in GUI unless viewing archive.
+- **Flow of Events for Main Success Scenario**
+	1. User selects "Delete Task" button
+	2. User selects task they would like to delete from a dropdown list that is displayed.
+	3. The task is removed from the main database and moved to the archive.
+- **Flow of Events for Alternate Scenario**
+	1. There is a cancel button users can click instead of selecting a course to delete.
+	2. If there are no tasks to delete, they can only click "Cancel" to go back to the main menu.
 
-### rename existing task
+### 5. Rename Task
+- **Related Requirements:** TODO
+- **Initiating Actor:** Employee
+- **Actor's Goal:** To give an existing task a different name
+- **Participating Actors:** TaskList, Interface, Database
+- **Preconditions:** Task to be renamed already exists
+- **Postconditions:** Task is stored in database with the new name instead.
+- **Flow of Events for Main Success Scenario**
+	1. User selects "Rename Task" button
+	2. User selects task they would like to rename from a dropdown list that is displayed.
+	3. User enters the new name into a text field.
+	3. The task is stored in the database under the new name.
+- **Flow of Events for Alternate Scenario**
+	1. There is a cancel button users can click instead of renaming.
+	2. If there are no tasks to rename, they can only click "Cancel" to go back to the main menu.
 
 ### size new task or existing task
 
