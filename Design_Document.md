@@ -23,10 +23,10 @@
 - manager and employee
 
 ### Reasons for using program: 
-- make it really simple to use
+- make it really simple and easy to use and manage tasks
 
 ### Interface would have: 
-- all possible options display, feedback,
+- all possible options display, feedback, **view settings**
 
 # Product Reviews: (Good ideas from other Task Managing Software)
 - Seperate tasks into classes
@@ -38,9 +38,11 @@
 ### What is the same?
 - the options for working with a task are the same
 ### What is different?
-- more options for tasks
+- more options for task organization
 - Gui interface
 - Sql database
+- Organization by Sprint
+- Comprehensive feedback from program **notifications**
 
 # Project Architecture:
 - GUI Interface for user
