@@ -80,7 +80,8 @@
 	2. If they are working on a new task they enter it into a text field. Otherwise, they select the desired task from a drop down menu.
 	3. After hitting submit the name of the task and the current system time is added into the database with the "start" property 
 - **Flow of Events for Alternate Scenarios**
-	1. If the use selects a task currently in process, the database displays "That task has already been started at <TIMESTAMP>"
+	1. If the user selects a task currently in process, the database displays "That task has already been started at <TIMESTAMP>"
+	2. If the user starts a task that already has existing start and end time, an error will be thrown to check if the name is correct and the user will be prompted to rename that task, or proceed with starting it. If a task has a description it will be shown to verify that is the correct task.
 
 ### 2. Stop Existing Task 
 - **Related Requirements:** TODO
@@ -124,7 +125,7 @@
 	3. The task is removed from the main database and moved to the archive.
 - **Flow of Events for Alternate Scenario**
 	1. There is a cancel button users can click instead of selecting a course to delete.
-	2. If there are no tasks to delete, they can only click "Cancel" to go back to the main menu.
+	2. If there are no tasks to delete, that message will be displayed and they can only click "Cancel" to go back to the main menu.
 
 ### 5. Rename Task
 - **Related Requirements:** TODO
@@ -209,11 +210,11 @@
 - **Related Requirements:** TODO
 - **Initiating Actor:** Employee
 - **Actor's Goal:** To place a task into a certain group.
-- **Participating Actors:** Tracklist, Interface ,Database
+- **Participating Actors:** Tracklist, Interface, Database
 - **Preconditions:** None
-- **Postconditions:** A task is classified under certain a catagory.
+- **Postconditions:** A task is classified under a certain catagory.
 - **Flow of Events for Main Success Scenario**
-	1. User selects "Classify Task Catorgy" button
+	1. User selects "Classify Task Cateorgy" button
 	2. A menu will pop up and prompt the User to select a task, or multipule.
 	3. User will then type in the catorgy they wish the task to be in.
 	4. When user hits apply, it will propmt the user that the catagory of the task has been implimented/changed.
