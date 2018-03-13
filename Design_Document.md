@@ -205,13 +205,29 @@
 	1. If there are no logs to display, the program displays "None." 
 	2. There is a cancel button users can click instead of editing.
 
+### 10. Classify Tasks Into a Catorgy
+- **Related Requirements:** TODO
+- **Initiating Actor:** Employee
+- **Actor's Goal:** To place a task into a certain group.
+- **Participating Actors:** Tracklist, Interface ,Database
+- **Preconditions:** None
+- **Postconditions:** A task is classified under certain a catagory.
+- **Flow of Events for Main Success Scenario**
+	1. User selects "Classify Task Catorgy" button
+	2. A menu will pop up and prompt the User to select a task, or multipule.
+	3. User will then type in the catorgy they wish the task to be in.
+	4. When user hits apply, it will propmt the user that the catagory of the task has been implimented/changed.
+- **Flow of Events for Alternate Scenario**
+	1. If there are no tasks to display, the program displays "None." 
+	2. There is a cancel button users can click instead of editing.
+
 
 # Traceability Matrix:
 
-|Requirement|UC1|UC2|UC3|UC4|UC5|UC6|UC7|UC8|UC9|
-|-----------|---|---|---|---|---|---|---|---|---|
-|REQ1		| X | X | X | X | X | X | X |   | X |
-|REQ2		|   |   |   |   |   |   |   | X |   |
-|REQ3		|   |   | X |   |   | X | X |   |   |
-|REQ4		|   |   |   |   |   |   |   |   | X |
+|Requirement|UC1|UC2|UC3|UC4|UC5|UC6|UC7|UC8|UC9|UC10|
+|-----------|---|---|---|---|---|---|---|---|---|---|
+|REQ1		| X | X | X | X | X | X | X |   | X |   |
+|REQ2		|   |   |   |   |   |   |   | X |   |   |
+|REQ3		|   |   | X |   |   | X | X |   |   | X |
+|REQ4		|   |   |   |   |   |   |   |   | X |   |
 
