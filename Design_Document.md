@@ -208,5 +208,10 @@
 
 # Traceability Matrix:
 
-
+|Requirement|UC1|UC2|UC3|UC4|UC5|UC6|UC7|UC8|UC9|
+|-----------|---|---|---|---|---|---|---|---|---|
+|REQ1		| X | X | X | X | X | X | X |   | X |
+|REQ2		|   |   |   |   |   |   |   | X |   |
+|REQ3		|   |   | X |   |   | X | X |   |   |
+|REQ4		|   |   |   |   |   |   |   |   | X |
 
