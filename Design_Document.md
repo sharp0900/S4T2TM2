@@ -43,10 +43,7 @@
 
 # Requirements:
 ##User Stories
-
-### two users: 
-- manager and employee
-- 
+ 
 ### manager: 
 - View total time spent on project
 - View statistics for users
@@ -86,12 +83,25 @@
 - **Postconditions:** A session will have a stop entry added.
 - **Flow of Events for Main Success Scenario**
 	1. User selects "Stop Task" button
-	2. A dropdown list of currently active tasks 
+	2. A dropdown list of currently active tasks is displayed. The user selects the one they'd like to stop.
 	3. After hitting submit the name of the task and the current system time is added into the database with the "start" property 
 - **Flow of Events for Alternate Scenario**
 	1. There are no currently active tasks. Only active button is a 'Back' button.
 
 ### describe new or existing task
+- **Related Requirements:** TODO
+- **Initiating Actor:** Employee
+- **Actor's Goal:** To add useful information about a task to the database as a description
+- **Participating Actors:** Task, Interface, Database
+- **Preconditions:** None
+- **Postconditions:** A task with the given name and description exists.
+- **Flow of Events for Main Success Scenario**
+	1. User selects "Describe Task" button
+	2. A dropdown list of tasks on the database is displayed. User selects one of those, or enters a new one into a text field.
+	3. User types in the description they'd like to add into another text field.
+	4. After hitting submit the given description is stored in the database with the given task name.
+- **Flow of Events for Alternate Scenario**
+	1. If a task already had a description, the program loads that description into the text field so the user can edit, append, or delete it.
 
 ### delete existing task
 
@@ -99,8 +109,26 @@
 
 ### size new task or existing task
 
+### add deadline to new or existing task
+- **Related Requirements:** TODO
+- **Initiating Actor:** Employee
+- **Actor's Goal:** To add a deadline to a task in order to plan and prioritize.
+- **Participating Actors:** Task, Interface, Database
+- **Preconditions:** None
+- **Postconditions:** A task with the given name and deadline exists.
+- **Flow of Events for Main Success Scenario**
+	1. User selects "Add Deadline" button
+	2. A dropdown list of tasks on the database is displayed. User selects one of those, or enters a new one into a text field.
+	3. User types into another textfield the date they'd like to set as the deadline for the task.
+	4. After hitting submit the given deadline is displayed in the database with the given task name.
+- **Flow of Events for Alternate Scenario**
+	1. Program displays an error if the user tries to enter a deadline that is already passed.
+
+### edit times for tasks
+
+### view stats for tasks
+
 # Traceability Matrix:
 
-# Pre Conditions & Post Conditions:
 
 
