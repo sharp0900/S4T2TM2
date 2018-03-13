@@ -13,14 +13,6 @@
 ### Customer: 
 - This program is intended for individuals or teams working in an AGILE development enviornment
 
-### manager: 
-- has more permissions 
-
-### employee: 
-- normal access
-
-### two users: 
-- manager and employee
 
 ### Reasons for using program: 
 - make it really simple and easy to use and manage tasks
@@ -51,6 +43,26 @@
 - SQL database for storing GUI formatted input
 
 # Requirements:
+##User Stories
+
+### two users: 
+- manager and employee
+- 
+### manager: 
+- View total time spent on project
+- View statistics for users
+- Can edit time entries in the database
+
+### employee: 
+- Can add tasks
+- Can start and stop tasks
+- Can add descriptions of tasks
+- Can rename tasks
+- Can delete tasks
+- Can view total time spent on tasks
+- Can view stats on tasks
+- Can give a task a size
+
 ## Use Cases:
 ### 1. Start New Task 
 - **Related Requirements:** TODO
