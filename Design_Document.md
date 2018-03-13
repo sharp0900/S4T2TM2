@@ -7,15 +7,13 @@
 - Agile development is not limited to just programmers. A GUI would make interfacing with the program easier for artists, designers, managers, and so on.
 - Limiting the format in which users can enter data makes it easier to check for valid input and check for errors.
 
-## SQL database: 
-- easier to access,store,manipulate data
 
 ### Customer: 
-- This program is intended for individuals or teams working in an AGILE development enviornment
+- This program is intended for individuals or teams working in an AGILE development environment.
 
 
 ### Reasons for using program: 
-- make it really simple and easy to use and manage tasks
+- Out program is intended to be a tool that is useful for managing tasks while being very simple and easy to use.
 
 ### Interface would have: 
 - all possible options display, feedback, **view settings**
@@ -29,12 +27,13 @@
 
 # Project Overview:
 ### What is the same?
-- the options for working with a task are the same
+- Previous use cases will remain present in future sprints. IE, start, stop, rename, delete, describe, summary, and size will still be functions
 ### What is different?
-- more options for task organization
-- Gui interface
-- Sql database
-- Organization by Sprint
+- We are adding a GUI built in Java to increase user accessibility
+- We are adding new use cases, including the ability to add a deadline
+- It will be possible to view projects in terms of sprints
+- Manager users will be able to edit the log through the GUI
+- An SQL database will be used to store task data instead of a txt file.
 - Comprehensive feedback from program **notifications**
 
 # Project Architecture:
