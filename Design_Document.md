@@ -42,6 +42,12 @@
 - SQL database for storing GUI formatted input
 
 # Requirements:
+
+| Identifier	| Priority		| Requirement 	|
+|---------------|---------------|---------------|
+| REQ1			|5				|System should keep a database of time records	|
+|REQ2			|5				|System should allow users to acess data about entered time logs.|
+
 ##User Stories
  
 ### manager: 
