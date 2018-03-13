@@ -4,14 +4,14 @@
 # Introduction:
 
 ## GUI: will open up the program to more users
-- easier to error check
-- easier to get valid input
+- Agile development is not limited to just programmers. A GUI would make interfacing with the program easier for artists, designers, managers, and so on.
+- Limiting the format in which users can enter data makes it easier to check for valid input and check for errors.
 
 ## SQL database: 
 - easier to access,store,manipulate data
 
 ### Customer: 
-- Agile users, anyone can use the program
+- This program is intended for individuals or teams working in an AGILE development enviornment
 
 ### manager: 
 - has more permissions 
@@ -52,7 +52,7 @@
 
 # Requirements:
 ## Use Cases:
-### 1. start new task 
+### 1. Start New Task 
 - **Related Requirements:** TODO
 - **Initiating Actor:** Employee
 - **Actor's Goal:** To mark the timestamp at which work started on current session
@@ -66,7 +66,7 @@
 - **Flow of Events for Alternate Scenarios**
 	1. If the use selects a task currently in process, the database displays "That task has already been started at TIMESTAMP"
 
-### 2. stop existing task 
+### 2. Stop Existing Task 
 - **Related Requirements:** TODO
 - **Initiating Actor:** Employee
 - **Actor's Goal:** To mark the timestamp at which work stopped on current session
