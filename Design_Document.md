@@ -43,10 +43,12 @@
 
 # Requirements:
 
-| Identifier	| Priority		| Requirement 	|
-|---------------|---------------|---------------|
-| REQ1			|5				|System should keep a database of time records	|
-|REQ2			|5				|System should allow users to acess data about entered time logs.|
+| Identifier| Requirement 	|
+|-----------|---------------|
+| REQ1	|System should keep a database of time records	|
+|REQ2	|System should allow users to access data about entered time logs.|
+|REQ3	|System should allow users to add details to their tasks, such as size, description, and deadlines.|
+|REQ4	|System should allow manager users to modify time logs.|
 
 ##User Stories
  
