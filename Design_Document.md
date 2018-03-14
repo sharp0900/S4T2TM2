@@ -56,6 +56,7 @@
 |REQ9	|System should allow users to archive old tasks.|
 |REQ10	|System should allow users to sort tasks into category.|
 |REQ11	|Users should be able to edit all details of a task stored in the database.|
+|REQ12	|System should provide immediate feedback whenever something is successfully added to the database.|
 
 ##User Stories
  
@@ -85,7 +86,7 @@
 - **Flow of Events for Main Success Scenario**
 	1. User selects "Start Task" button
 	2. If they are working on a new task they enter it into a text field. Otherwise, they select the desired task from a drop down menu.
-	3. After hitting submit the name of the task and the current system time is added into the database with the "start" property 
+	3. After hitting submit the name of the task and the current system time is added into the database with the "start" property and the user is notified that the entry was successful.
 - **Flow of Events for Alternate Scenarios**
 	1. If the user selects a task currently in process, the database displays "That task has already been started at <TIMESTAMP>"
 	2. If the user starts a task that already has existing start and end time, an error will be thrown to check if the name is correct and the user will be prompted to rename that task, or proceed with starting it. If a task has a description it will be shown to verify that is the correct task.
@@ -100,7 +101,7 @@
 - **Flow of Events for Main Success Scenario**
 	1. User selects "Stop Task" button
 	2. A dropdown list of currently active tasks is displayed. The user selects the one they'd like to stop.
-	3. After hitting submit the name of the task and the current system time is added into the database with the "start" property 
+	3. After hitting submit the name of the task and the current system time is added into the database with the "start" property and the user is notified that the entry was successful.
 - **Flow of Events for Alternate Scenario**
 	1. If there are no currently active tasks, the user is notified. The only active button is a 'Back' button.
 
@@ -115,7 +116,7 @@
 	1. User selects "Describe Task" button
 	2. A dropdown list of tasks on the database is displayed. User selects one of those, or enters a new one into a text field.
 	3. User types in the description they'd like to add into another text field.
-	4. After hitting submit the given description is stored in the database with the given task name.
+	4. After hitting submit the given description is stored in the database with the given task name and the user is notified that the change was successful.
 - **Flow of Events for Alternate Scenario**
 	1. If a task already had a description, the program loads that description into the text field so the user can edit, append, or delete it.
 
@@ -129,7 +130,7 @@
 - **Flow of Events for Main Success Scenario**
 	1. User selects "Delete Task" button
 	2. User selects task they would like to delete from a dropdown list that is displayed.
-	3. The task is removed from the main database and moved to the archive.
+	3. The task is removed from the main database and moved to the archive and the user is notified that the change was successful.
 - **Flow of Events for Alternate Scenario**
 	1. There is a cancel button users can click instead of selecting a course to delete.
 	2. If there are no tasks to delete, that message will be displayed and they can only click "Cancel" to go back to the main menu.
@@ -145,7 +146,7 @@
 	1. User selects "Rename Task" button
 	2. User selects task they would like to rename from a dropdown list that is displayed.
 	3. User enters the new name into a text field.
-	3. The task is stored in the database under the new name.
+	3. The task is stored in the database under the new name and the user is notified that the change was successful.
 - **Flow of Events for Alternate Scenario**
 	1. There is a cancel button users can click instead of renaming.
 	2. If there are no tasks to rename, they can only click "Cancel" to go back to the main menu.
@@ -161,7 +162,7 @@
 	1. User selects "Describe Task" button
 	2. A dropdown list of tasks on the database is displayed. User selects one of those, or enters a new one into a text field.
 	3. User types in the description they'd like to add into another text field.
-	4. After hitting submit the given description is stored in the database with the given task name.
+	4. After hitting submit the given description is stored in the database with the given task name and the user is notified that the change was successful.
 - **Flow of Events for Alternate Scenario**
 	1. If a task already had a description, the program loads that description into the text field so the user can edit, append, or delete it.
 
@@ -176,7 +177,7 @@
 	1. User selects "Add Deadline" button
 	2. A dropdown list of tasks on the database is displayed. User selects one of those, or enters a new one into a text field.
 	3. User types into another textfield the date they'd like to set as the deadline for the task.
-	4. After hitting submit the given deadline is displayed in the database with the given task name.
+	4. After hitting submit the given deadline is displayed in the database with the given task name and the user is notified that the change was successful.
 - **Flow of Events for Alternate Scenario**
 	1. Program displays an error if the user tries to enter a deadline that is already passed.
 	2. Selecting a task that already has a deadline will override the previous deadline with the new one.
@@ -209,7 +210,7 @@
 	2. A list of all logs in database is displayed.
 	3. User can filter by contributing developer or task name to find the task they'd like to edit.
 	4. User selects task to edit and changes the timestamp manually.
-	5. This change is recorded in the database.
+	5. This change is recorded in the database and the user is notified that the change was successful.
 - **Flow of Events for Alternate Scenario**
 	1. If there are no logs to display, the program displays "None." 
 	2. There is a cancel button users can click instead of editing.
@@ -246,4 +247,5 @@
 |REQ9		|   |   |   | X |   |   |   | X |   |   |
 |REQ10		|   |   |   |   |   |   |   | X |   | X |
 |REQ11		|   |   | X |   | X | X | X | X | X | X |
+|REQ12		| X | X | X | X | X | X | X |   | X | X |
 
