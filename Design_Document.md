@@ -3,6 +3,8 @@
 - Group Members: Victor, Angela, Kevin, Emily
 # Introduction:
 
+[//]: # (TODO: improve introduction)
+
 ## GUI: will open up the program to more users
 - Agile development is not limited to just programmers. A GUI would make interfacing with the program easier for artists, designers, managers, and so on.
 - Limiting the format in which users can enter data makes it easier to check for valid input and check for errors.
@@ -19,6 +21,7 @@
 - all possible options display, feedback, **view settings**
 
 # Product Reviews: (Good ideas from other Task Managing Software)
+[//]: # (TODO: more product reviews)
 - Seperate tasks into classes
 - always have the selected task summary displayed
 - each task has a button
@@ -37,7 +40,8 @@
 - Comprehensive feedback from program **notifications**
 
 # Project Architecture:
-[//]: # (TODO: put diagrams here)
+[//]: # (TODO: use case diagram)
+[//]: # (TODO: diagram demo)
 - GUI Interface for user
 - logic for handling gui inputs
 - SQL database for storing GUI formatted input
@@ -60,13 +64,14 @@
 |REQ12	|System should provide immediate feedback whenever something is successfully added to the database.|
 
 ##User Stories
+ [//]: # (TODO: put into formal user story UML diagram)
  
 ### manager: 
 - View total time spent on project
 - View statistics for users
 - Can edit time entries in the database
 
-### employee: 
+### developer: 
 - Can add tasks
 - Can start and stop tasks
 - Can add descriptions of tasks
