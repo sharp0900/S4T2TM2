@@ -51,11 +51,11 @@
 |REQ4	|System should allow users to add descriptive data to their time logs.|
 |REQ5	|System should allow users to give tasks a size.|
 |REQ6	|System should allow users to assign a deadline to tasks.|
-|REQ7	|System should allow users to sort tasks by deadline.|
+|REQ7	|System should allow users to sort tasks by deadline, group, or size.|
 |REQ8	|System should notify user of upcoming deadlines when they start the program.|
 |REQ9	|System should allow users to archive old tasks.|
 |REQ10	|System should allow users to sort tasks into category.|
-|REQ11	|Users should be able to edit all details of a task stores in the database.|
+|REQ11	|Users should be able to edit all details of a task stored in the database.|
 
 ##User Stories
  
@@ -234,8 +234,15 @@
 
 |Requirement|UC1|UC2|UC3|UC4|UC5|UC6|UC7|UC8|UC9|UC10|
 |-----------|---|---|---|---|---|---|---|---|---|---|
-|REQ1		| X | X |   |   |   |   |   |   | X |   |
+|REQ1		| X | X |   |   |   |   |   | X | X |   |
 |REQ2		|   |   |   |   |   |   |   | X |   |   |
 |REQ3		|   |   |   |   |   |   |   |   | X |   |
-|REQ4		|   |   | X |   |   |   |   |   |   |   |
+|REQ4		|   |   | X |   |   |   |   | X |   |   |
+|REQ5		|   |   |   |   |   | X |   | X |   |   |
+|REQ6		|   |   |   |   |   |   |   | X |   |   |
+|REQ7		|   |   |   |   |   | X | X | X |   | X |
+|REQ8		|   |   |   |   |   |   | X |   |   |   |
+|REQ9		|   |   |   | X |   |   |   | X |   |   |
+|REQ10		|   |   |   |   |   |   |   | X |   | X |
+|REQ11		|   |   | X |   | X | X | X | X | X | X |
 
