@@ -77,7 +77,7 @@
 
 ## Use Cases:
 ### 1. Start New Task 
-- **Related Requirements:** TODO
+- **Related Requirements:** REQ1, REQ12
 - **Initiating Actor:** Employee
 - **Actor's Goal:** To mark the timestamp at which work started on current session
 - **Participating Actors:** Task, Interface, Database
@@ -92,7 +92,7 @@
 	2. If the user starts a task that already has existing start and end time, an error will be thrown to check if the name is correct and the user will be prompted to rename that task, or proceed with starting it. If a task has a description it will be shown to verify that is the correct task.
 
 ### 2. Stop Existing Task 
-- **Related Requirements:** TODO
+- **Related Requirements:** REQ1, REQ12
 - **Initiating Actor:** Employee
 - **Actor's Goal:** To mark the timestamp at which work stopped on current session
 - **Participating Actors:** Task, Interface, Database
@@ -106,7 +106,7 @@
 	1. If there are no currently active tasks, the user is notified. The only active button is a 'Back' button.
 
 ### 3. Describe New or Existing Task
-- **Related Requirements:** TODO
+- **Related Requirements:** REQ3, REQ11, REQ12
 - **Initiating Actor:** Employee
 - **Actor's Goal:** To add useful information about a task to the database as a description
 - **Participating Actors:** TaskList, Interface, Database
@@ -121,7 +121,7 @@
 	1. If a task already had a description, the program loads that description into the text field so the user can edit, append, or delete it.
 
 ### 4. Delete Existing Task
-- **Related Requirements:** TODO
+- **Related Requirements:** REQ9, REQ12
 - **Initiating Actor:** Employee
 - **Actor's Goal:** To archive a task and remove it from the main database
 - **Participating Actors:** TaskList, Interface, Database
@@ -136,7 +136,7 @@
 	2. If there are no tasks to delete, that message will be displayed and they can only click "Cancel" to go back to the main menu.
 
 ### 5. Rename Task
-- **Related Requirements:** TODO
+- **Related Requirements:** REQ11, REQ12
 - **Initiating Actor:** Employee
 - **Actor's Goal:** To give an existing task a different name
 - **Participating Actors:** TaskList, Interface, Database
@@ -152,7 +152,7 @@
 	2. If there are no tasks to rename, they can only click "Cancel" to go back to the main menu.
 
 ### 6. Size New or Existing Task
-- **Related Requirements:** TODO
+- **Related Requirements:** REQ5, REQ7, REQ11, REQ12
 - **Initiating Actor:** Employee
 - **Actor's Goal:** To add useful information about a task to the database as a description
 - **Participating Actors:** TaskList, Interface, Database
@@ -167,7 +167,7 @@
 	1. If a task already had a description, the program loads that description into the text field so the user can edit, append, or delete it.
 
 ### 7. Add Deadline to New or Existing Task
-- **Related Requirements:** TODO
+- **Related Requirements:** REQ7, REQ8, REQ11, REQ12
 - **Initiating Actor:** Employee
 - **Actor's Goal:** To add a deadline to a task in order to plan and prioritize.
 - **Participating Actors:** Task, Interface, Database
@@ -183,7 +183,7 @@
 	2. Selecting a task that already has a deadline will override the previous deadline with the new one.
 
 ### 8. View Stats for Tasks 
-- **Related Requirements:** TODO
+- **Related Requirements:** REQ1, REQ2, REQ4, REQ5, REQ6, REQ7, REQ9, REQ10, REQ11
 - **Initiating Actor:** Employee
 - **Actor's Goal:** To view stats for tasks in database
 - **Participating Actors:** TaskList, Interface, Database
@@ -199,7 +199,7 @@
 	3. Program does not display stats for size categories that have less than 2 entries.
 
 ### 9. Edit Times for Tasks
-- **Related Requirements:** TODO
+- **Related Requirements:** REQ1, REQ3, REQ11, REQ12
 - **Initiating Actor:** Manager
 - **Actor's Goal:** To make corrections in database
 - **Participating Actors:** TaskList, Interface, Database
@@ -216,7 +216,7 @@
 	2. There is a cancel button users can click instead of editing.
 
 ### 10. Classify Tasks Into a Category
-- **Related Requirements:** TODO
+- **Related Requirements:** REQ7, REQ10, REQ11, REQ12
 - **Initiating Actor:** Employee
 - **Actor's Goal:** To place a task into a certain group.
 - **Participating Actors:** Tasklist, Interface, Database
