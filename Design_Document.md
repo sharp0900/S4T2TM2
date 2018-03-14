@@ -37,7 +37,7 @@
 - Comprehensive feedback from program **notifications**
 
 # Project Architecture:
-[//]: # TODO: put diagrams here
+[//]: # (TODO: put diagrams here)
 - GUI Interface for user
 - logic for handling gui inputs
 - SQL database for storing GUI formatted input
