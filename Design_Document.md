@@ -45,10 +45,17 @@
 
 | Identifier| Requirement 	|
 |-----------|---------------|
-| REQ1	|System should keep track of time spent on a task.|
+|REQ1	|System should keep track of time spent on a task.|
 |REQ2	|System should allow users to access data about entered time logs.|
 |REQ3	|System should allow manager users to modify time logs.|
 |REQ4	|System should allow users to add descriptive data to their time logs.|
+|REQ5	|System should allow users to give tasks a size.|
+|REQ6	|System should allow users to assign a deadline to tasks.|
+|REQ7	|System should allow users to sort tasks by deadline.|
+|REQ8	|System should notify user of upcoming deadlines when they start the program.|
+|REQ9	|System should allow users to archive old tasks.|
+|REQ10	|System should allow users to sort tasks into category.|
+|REQ11	|Users should be able to edit all details of a task stores in the database.|
 
 ##User Stories
  
