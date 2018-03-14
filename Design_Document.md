@@ -179,6 +179,7 @@
 	4. After hitting submit the given deadline is displayed in the database with the given task name.
 - **Flow of Events for Alternate Scenario**
 	1. Program displays an error if the user tries to enter a deadline that is already passed.
+	2. Selecting a task that already has a deadline will override the previous deadline with the new one.
 
 ### 8. View Stats for Tasks 
 - **Related Requirements:** TODO
