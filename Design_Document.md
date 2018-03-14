@@ -249,3 +249,18 @@
 |REQ11		|   |   | X |   | X | X | X | X | X | X |
 |REQ12		| X | X | X | X | X | X | X |   | X | X |
 
+# Actors
+|Actor|Actors Goal|Use Case Name|
+|--------------|----------------------------------------------------|---------------|
+|Manager          |  |   |
+|Manager          |  |   |
+|Manager          |  |   |
+|Manager          |  |   |
+|Developer        |  |   |
+|Developer        |  |   |
+|Developer        |  |   |
+|Task Manager   |  |   |
+|REQ9        |   |   |   | X |   |   |   | X |   |   |
+|REQ10        |   |   |   |   |   |   |   | X |   | X |
+|REQ11        |   |   | X |   | X | X | X | X | X | X |
+|REQ12        | X | X | X | X | X | X | X |   | X | X |
