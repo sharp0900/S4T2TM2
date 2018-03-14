@@ -213,18 +213,18 @@
 	1. If there are no logs to display, the program displays "None." 
 	2. There is a cancel button users can click instead of editing.
 
-### 10. Classify Tasks Into a Catorgy
+### 10. Classify Tasks Into a Category
 - **Related Requirements:** TODO
 - **Initiating Actor:** Employee
 - **Actor's Goal:** To place a task into a certain group.
-- **Participating Actors:** Tracklist, Interface, Database
+- **Participating Actors:** Tasklist, Interface, Database
 - **Preconditions:** None
-- **Postconditions:** A task is classified under a certain catagory.
+- **Postconditions:** A task is classified under a certain category.
 - **Flow of Events for Main Success Scenario**
-	1. User selects "Classify Task Cateorgy" button
-	2. A menu will pop up and prompt the User to select a task, or multipule.
-	3. User will then type in the catorgy they wish the task to be in.
-	4. When user hits apply, it will propmt the user that the catagory of the task has been implimented/changed.
+	1. User selects "Classify Task Category" button
+	2. A menu will pop up and prompt the User to select a task, or multiple.
+	3. User will then type in the category they wish the task to be in.
+	4. When user hits apply, it will prompt the user that the category of the task has been implemented/changed.
 - **Flow of Events for Alternate Scenario**
 	1. If there are no tasks to display, the program displays "None." 
 	2. There is a cancel button users can click instead of editing.
