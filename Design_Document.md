@@ -258,15 +258,14 @@
 # Actors
 |Actor|Actors Goal|Use Case Name|
 |--------------|----------------------------------------------------|---------------|
-|Manager          |  |   |
-|Manager          |  |   |
-|Manager          |  |   |
-|Manager          |  |   |
-|Developer        |  |   |
-|Developer        |  |   |
-|Developer        |  |   |
-|Task Manager   |  |   |
-|REQ9        |   |   |   | X |   |   |   | X |   |   |
-|REQ10        |   |   |   |   |   |   |   | X |   | X |
-|REQ11        |   |   | X |   | X | X | X | X | X | X |
-|REQ12        | X | X | X | X | X | X | X |   | X | X |
+|Manager          | To view total time spent on project  | UC-8  |
+|Manager          | To view statistics for users | UC-8 |
+|Manager          | To edit time entries in the database | UC-9  |
+|Developer        | To add a task | UC-1, UC-3  |
+|Developer        | To start and stop a task | UC-1  |
+|Developer        | To add a description of a task | UC-3  |
+|Developer        | To rename a task | UC-5  |
+|Developer        | To delete a task | UC-4  |
+|Developer        | To view total time spent on tasks |  UC-8 |
+|Developer        | To view stats on tasks | UC-8  |
+|Developer        | To give a task a size | UC-6  |
