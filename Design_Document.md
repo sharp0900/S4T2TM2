@@ -45,10 +45,10 @@
 
 | Identifier| Requirement 	|
 |-----------|---------------|
-| REQ1	|System should keep a database of time records	|
+| REQ1	|System should keep track of time spent on a task.|
 |REQ2	|System should allow users to access data about entered time logs.|
-|REQ3	|System should allow users to add details to their tasks, such as size, description, and deadlines.|
-|REQ4	|System should allow manager users to modify time logs.|
+|REQ3	|System should allow manager users to modify time logs.|
+|REQ4	|System should allow users to add descriptive data to their time logs.|
 
 ##User Stories
  
@@ -227,8 +227,8 @@
 
 |Requirement|UC1|UC2|UC3|UC4|UC5|UC6|UC7|UC8|UC9|UC10|
 |-----------|---|---|---|---|---|---|---|---|---|---|
-|REQ1		| X | X | X | X | X | X | X |   | X |   |
+|REQ1		| X | X |   |   |   |   |   |   | X |   |
 |REQ2		|   |   |   |   |   |   |   | X |   |   |
-|REQ3		|   |   | X |   |   | X | X |   |   | X |
-|REQ4		|   |   |   |   |   |   |   |   | X |   |
+|REQ3		|   |   |   |   |   |   |   |   | X |   |
+|REQ4		|   |   | X |   |   |   |   |   |   |   |
 
