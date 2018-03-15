@@ -101,7 +101,7 @@
 ## Use Cases:
 ### 1. Start New Task 
 - **Related Requirements:** REQ1, REQ12
-- **Initiating Actor:** Employee
+- **Initiating Actor:** Developer
 - **Actor's Goal:** To mark the timestamp at which work started on current session
 - **Participating Actors:** Task, Interface, Database
 - **Preconditions:**The task selected must not be an active task.
@@ -116,7 +116,7 @@
 
 ### 2. Stop Existing Task 
 - **Related Requirements:** REQ1, REQ12
-- **Initiating Actor:** Employee
+- **Initiating Actor:** Developer
 - **Actor's Goal:** To mark the timestamp at which work stopped on current session
 - **Participating Actors:** Task, Interface, Database
 - **Preconditions:** There is at least one active session in database.
@@ -130,7 +130,7 @@
 
 ### 3. Describe New or Existing Task
 - **Related Requirements:** REQ3, REQ11, REQ12
-- **Initiating Actor:** Employee
+- **Initiating Actor:** Developer
 - **Actor's Goal:** To add useful information about a task to the database as a description
 - **Participating Actors:** TaskList, Interface, Database
 - **Preconditions:** None
@@ -145,7 +145,7 @@
 
 ### 4. Delete Existing Task
 - **Related Requirements:** REQ9, REQ12
-- **Initiating Actor:** Employee
+- **Initiating Actor:** Developer
 - **Actor's Goal:** To archive a task and remove it from the main database
 - **Participating Actors:** TaskList, Interface, Database
 - **Preconditions:** Task to be deleted already exists
@@ -160,7 +160,7 @@
 
 ### 5. Rename Task
 - **Related Requirements:** REQ11, REQ12
-- **Initiating Actor:** Employee
+- **Initiating Actor:** Developer
 - **Actor's Goal:** To give an existing task a different name
 - **Participating Actors:** TaskList, Interface, Database
 - **Preconditions:** Task to be renamed already exists
@@ -176,7 +176,7 @@
 
 ### 6. Size New or Existing Task
 - **Related Requirements:** REQ5, REQ7, REQ11, REQ12
-- **Initiating Actor:** Employee
+- **Initiating Actor:** Developer
 - **Actor's Goal:** To add useful information about a task to the database as a description
 - **Participating Actors:** TaskList, Interface, Database
 - **Preconditions:** None
@@ -191,7 +191,7 @@
 
 ### 7. Add Deadline to New or Existing Task
 - **Related Requirements:** REQ7, REQ8, REQ11, REQ12
-- **Initiating Actor:** Employee
+- **Initiating Actor:** Developer
 - **Actor's Goal:** To add a deadline to a task in order to plan and prioritize.
 - **Participating Actors:** Task, Interface, Database
 - **Preconditions:** None
@@ -207,7 +207,7 @@
 
 ### 8. View Stats for Tasks 
 - **Related Requirements:** REQ1, REQ2, REQ4, REQ5, REQ6, REQ7, REQ9, REQ10, REQ11
-- **Initiating Actor:** Employee
+- **Initiating Actor:** Developer
 - **Actor's Goal:** To view stats for tasks in database
 - **Participating Actors:** TaskList, Interface, Database
 - **Preconditions:** None
@@ -240,7 +240,7 @@
 
 ### 10. Classify Tasks Into a Category
 - **Related Requirements:** REQ7, REQ10, REQ11, REQ12
-- **Initiating Actor:** Employee
+- **Initiating Actor:** Developer
 - **Actor's Goal:** To place a task into a certain group.
 - **Participating Actors:** Tasklist, Interface, Database
 - **Preconditions:** None
@@ -256,7 +256,7 @@
 
 	### 11. Color Code Tasks
 - **Related Requirements:** 
-- **Initiating Actor:** Employee
+- **Initiating Actor:** Developer
 - **Actor's Goal:** To color code a task, or multipule, a certin color for eaiser viewing
 - **Participating Actors:** Tasklist, Interface, Database
 - **Preconditions:** Task has to exist
@@ -272,7 +272,7 @@
 
 	### 12. Warning Prompt
 - **Related Requirements:** 
-- **Initiating Actor:** Employee
+- **Initiating Actor:** Developer
 - **Actor's Goal:** To prompt and ask the user, when creating a task of the same name, if what they are doing is what they want to be done.
 - **Participating Actors:** Tasklist, Interface, Database
 - **Preconditions:** User creates a task that already exist.
