@@ -254,23 +254,53 @@
 	1. If there are no tasks to display, the program displays "None." 
 	2. There is a cancel button users can click instead of editing.
 
+	### 11. Color Code Tasks
+- **Related Requirements:** 
+- **Initiating Actor:** Employee
+- **Actor's Goal:** To color code a task, or multipule, a certin color for eaiser viewing
+- **Participating Actors:** Tasklist, Interface, Database
+- **Preconditions:** Task has to exist
+- **Postconditions:** A task will be displayed with a certain color
+- **Flow of Events for Main Success Scenario**
+	1. User selects "Change Task Color" button
+	2. A menu will pop up and prompt the User to select a task, or multiple.
+	3. User will then select a box filled in with the colors that are avaliable, or enter in their own via hex.
+	4. When user hits apply, it will prompt the user that task color has been changed.
+- **Flow of Events for Alternate Scenario**
+	1. If there are no tasks to display, the program displays "None." 
+	2. There is a cancel button users can click instead of editing.
+
+	### 12. Warning Prompt
+- **Related Requirements:** 
+- **Initiating Actor:** Employee
+- **Actor's Goal:** To prompt and ask the user, when creating a task of the same name, if what they are doing is what they want to be done.
+- **Participating Actors:** Tasklist, Interface, Database
+- **Preconditions:** User creates a task that already exist.
+- **Postconditions:** The user will either create a new task with a diffrient name, or start the task of the same name. 
+- **Flow of Events for Main Success Scenario**
+	1. User selects "Start Task" button
+	2. A menu will prompt the user that the task already exist and ask if he\she wants to start a new task with a diffrient name instead or continue the task that already exist.
+	3. The user will select either yes, they want to start a new task under a diffrient name, or no, start the existing task under said name.
+- **Flow of Events for Alternate Scenario**
+	1. If the user selects a task currently in process, the database displays "That task has already been started at <TIMESTAMP>"
+	2. There is a cancel button users can click instead of continuing this processes.
 
 # Traceability Matrix:
 
-|Requirement|UC1|UC2|UC3|UC4|UC5|UC6|UC7|UC8|UC9|UC10|
-|-----------|---|---|---|---|---|---|---|---|---|---|
-|REQ1		| X | X |   |   |   |   |   | X | X |   |
-|REQ2		|   |   |   |   |   |   |   | X |   |   |
-|REQ3		|   |   |   |   |   |   |   |   | X |   |
-|REQ4		|   |   | X |   |   |   |   | X |   |   |
-|REQ5		|   |   |   |   |   | X |   | X |   |   |
-|REQ6		|   |   |   |   |   |   |   | X |   |   |
-|REQ7		|   |   |   |   |   | X | X | X |   | X |
-|REQ8		|   |   |   |   |   |   | X |   |   |   |
-|REQ9		|   |   |   | X |   |   |   | X |   |   |
-|REQ10		|   |   |   |   |   |   |   | X |   | X |
-|REQ11		|   |   | X |   | X | X | X | X | X | X |
-|REQ12		| X | X | X | X | X | X | X |   | X | X |
+|Requirement|UC1|UC2|UC3|UC4|UC5|UC6|UC7|UC8|UC9|UC10|UC11|UC12|
+|-----------|---|---|---|---|---|---|---|---|---|---|---|---|
+|REQ1		| X | X |   |   |   |   |   | X | X |   |   | X |
+|REQ2		|   |   |   |   |   |   |   | X |   |   |   |   |
+|REQ3		|   |   |   |   |   |   |   |   | X |   |   |   |
+|REQ4		|   |   | X |   |   |   |   | X |   |   |   |   |
+|REQ5		|   |   |   |   |   | X |   | X |   |   |   |   |
+|REQ6		|   |   |   |   |   |   |   | X |   |   |   |   |
+|REQ7		|   |   |   |   |   | X | X | X |   | X | X |   |
+|REQ8		|   |   |   |   |   |   | X |   |   |   |   |   |
+|REQ9		|   |   |   | X |   |   |   | X |   |   |   |   |
+|REQ10		|   |   |   |   |   |   |   | X |   | X |   |   |
+|REQ11		|   |   | X |   | X | X | X | X | X | X |   |   |
+|REQ12		| X | X | X | X | X | X | X |   | X | X | X | X |
 
 # Actors:
 |Actor|Actors Goal|Use Case Name|
