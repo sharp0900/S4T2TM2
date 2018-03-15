@@ -11,11 +11,11 @@
 
 
 ### Customer: 
-- This program is intended for individuals or teams working in an AGILE development environment.
+- This program is intended for individuals or teams working in an AGILE development environment. Programmers, designers, and managers alike can benefit from using our task manager software.
 
 
 ### Reasons for using program: 
-- Out program is intended to be a tool that is useful for managing tasks while being very simple and easy to use.
+- Our program is intended to be a tool that is useful for managing tasks while being very simple and easy to use. For students and professionals alike, time is an extremely important resource. Managing time and making sure time is getting dispensed appropriately between projects is an important concept, and a good task manager software should help improve the user's workflow. Professionals can benefit from having a tool to track their time in order to bill their clients accurately and with ease. A good task management program should also take some of the stress away from having to keep track of many deadlines and priorities. Our program also aims to help the user prioritize their time by using notifications based on their deadlines.
 
 ### Interface would have: 
 - A simple, easy to use menu
