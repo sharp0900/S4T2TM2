@@ -28,6 +28,23 @@
 - when creating a new task a new window pops up to give task details
 - Simple design with sidebar
 
+#### [trello.com](trello.com) Product Review
+- Trello has a very extensive user connection platform for agile users
+- Organization:
+        Boards contain lists
+        A board is to delineate by organization or group
+        Entire contents of a board can be moved or deleted all at once
+        Lists contain tasks, can be private or public
+        Lists have the capibility to be shared with organizations or groups
+        Tasks have a main description
+        Tasks can be assigned a user of an organization
+        Tasks have a 'comments' thread to act as updates
+        Tasks can be color coordinated or labeled
+        Tasks have due dates
+        Tasks have a checklist
+        Tasks have a place to add links or attachments
+        Filters are used to show different views such as sort by due dates, user, label
+
 # Project Overview:
 ### What is the same?
 - Previous use cases will remain present in future sprints. IE, start, stop, rename, delete, describe, summary, and size will still be functions
@@ -255,7 +272,7 @@
 |REQ11		|   |   | X |   | X | X | X | X | X | X |
 |REQ12		| X | X | X | X | X | X | X |   | X | X |
 
-# Actors
+# Actors:
 |Actor|Actors Goal|Use Case Name|
 |--------------|----------------------------------------------------|---------------|
 |Manager          | To view total time spent on project  | UC-8  |
