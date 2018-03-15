@@ -3,8 +3,6 @@
 - Group Members: Victor, Angela, Kevin, Emily
 # Introduction:
 
-[//]: # (TODO: improve introduction)
-
 ## GUI: will open up the program to more users
 - Agile development is not limited to just programmers. A GUI would make interfacing with the program easier for artists, designers, managers, and so on.
 - Limiting the format in which users can enter data makes it easier to check for valid input and check for errors.
