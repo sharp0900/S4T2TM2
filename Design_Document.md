@@ -18,7 +18,11 @@
 - Out program is intended to be a tool that is useful for managing tasks while being very simple and easy to use.
 
 ### Interface would have: 
-- all possible options display, feedback, **view settings**
+- A simple, easy to use menu
+- Quick navigation to any operation
+- A display setting that lets users customize their experince
+- Immediate feedback on all operations
+- Notifications about upcoming deadlines
 
 # Product Reviews: (Good ideas from other Task Managing Software)
 [//]: # (TODO: more product reviews)
@@ -80,7 +84,7 @@
 |REQ11	|Users should be able to edit all details of a task stored in the database.|
 |REQ12	|System should provide immediate feedback whenever something is successfully added to the database.|
 
-##User Stories
+## User Stories
  [//]: # (TODO: put into formal user story UML diagram)
  
 ### manager: 
