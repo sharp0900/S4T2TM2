@@ -279,7 +279,7 @@
 - **Postconditions:** The user will either create a new task with a diffrient name, or start the task of the same name. 
 - **Flow of Events for Main Success Scenario**
 	1. User selects "Start Task" button
-	2. A menu will prompt the user that the task already exist and ask if he\she wants to start a new task with a diffrient name instead or continue the task that already exist.
+	2. A menu will prompt the user that the task already exist and ask if he\she wants to start a new task with a diffrient name instead or continue the task that already exists.
 	3. The user will select either yes, they want to start a new task under a diffrient name, or no, start the existing task under said name.
 - **Flow of Events for Alternate Scenario**
 	1. If the user selects a task currently in process, the database displays "That task has already been started at <TIMESTAMP>"
