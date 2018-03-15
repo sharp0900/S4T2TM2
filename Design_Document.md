@@ -85,22 +85,23 @@
 |REQ12	|System should provide immediate feedback whenever something is successfully added to the database.|
 
 ## User Stories
- [//]: # (TODO: put into formal user story UML diagram)
  
 ### manager: 
-- View total time spent on project
-- View statistics for users
-- Can edit time entries in the database
+- As a manager, I can view total time spent on project in order to monitor my team.
+- As a manager, I can view statistics on developers in order to monitor my team.
+- As a manager, I can edit time entries in the database to make sure my team's records are accurate despite mistakes.
 
 ### developer: 
-- Can add tasks
-- Can start and stop tasks
-- Can add descriptions of tasks
-- Can rename tasks
-- Can delete tasks
-- Can view total time spent on tasks
-- Can view stats on tasks
-- Can give a task a size
+- As a developer, I can add tasks to my list to keep track of what I need to do.
+- As a developer, I can start and stop tasks to keep track of how my time is spent.
+- As a developer, I can add descriptions of tasks to add detail to the log entries.
+- As a developer, I can give a task a size to guide my timeline expectations.
+- As a developer, I can give a task a description to me help prioritize my time.
+- As a developer, I can rename tasks if design specifications change.
+- As a developer, I can archive tasks I am no longer working on to de-clutter my workspace.
+- As a developer, I can view total time spent on tasks so I can report that time to clients/managers.
+- As a developer, I can view stats on tasks to  to better optimize my workflow.
+- As a developer, I can assign tasks into folders to keep my workspace organized.
 
 ## Use Cases:
 ### 1. Start New Task 
@@ -108,7 +109,7 @@
 - **Initiating Actor:** Developer
 - **Actor's Goal:** To mark the timestamp at which work started on current session
 - **Participating Actors:** Task, Interface, Database
-- **Preconditions:**The task selected must not be an active task.
+- **Preconditions:** The task selected must not be an active task.
 - **Postconditions:** A task will have been started in the database.
 - **Flow of Events for Main Success Scenario**
 	1. User selects "Start Task" button
