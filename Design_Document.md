@@ -27,13 +27,7 @@
 
 # Product Reviews: (Good ideas from other Task Managing Software)
 [//]: # (TODO: more product reviews)
-- Seperate tasks into classes
-- always have the selected task summary displayed
-- each task has a button
-- when creating a new task a new window pops up to give task details
-- Simple design with sidebar
-
-#### [trello.com](trello.com) Product Review
+#### [trello.com](https://www.trello.com) Product Review
 - Trello has a very extensive user connection platform for agile users
 - Organization:
 - Boards contain lists
@@ -49,6 +43,26 @@
 - Tasks have a checklist
 - Tasks have a place to add links or attachments
 - Filters are used to show different views such as sort by due dates, user, label
+
+#### [Asana](https://www.asana.com) Product Review
+- Can add users into teams and see who is doing what.
+- Can add notes to a task to get an idea of what happend last time the task was updated.
+- Color code users to visualy see who did what easier.
+- Can leave notes for other users, so when they launch the program they will see what needs to be done.
+- Control which task can be seen by who to allow easier orgnization of tasks.
+
+#### [Producteev](https://www.producteev.com) Product Review
+- Can adds sub-tasks into a task thus creating a checklist, for said task, to see how close it is to being finished.
+- Can filter tasks by due date, sprints, people and etc...
+- When creating a task, one could assign other users into it.
+- Other users can be notified when said task is completed.
+
+#### [Hitask](https://hitask.com/) Product Review
+- Very simple, non-clutered, user-interface where all infomation (e.g: Tasks, users, deadline) are in single screen and sepreated into tabs for easy viewing.
+- Has a search bar to search a task, user, or project.
+- Has an activaty menu to see which user did what and when.
+- Has a calander to visualy see deadlines.
+
 
 # Project Overview:
 ### What is the same?
