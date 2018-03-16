@@ -321,3 +321,5 @@
 |Developer        | To give a task a size | UC-6  |
 
 ![Use Case Diagram](https://github.com/CSUS-CSC-131-Spring2018/S4T2TM2/blob/master/Use_Case_Diagram.png)
+![Main Menu](https://github.com/CSUS-CSC-131-Spring2018/S4T2TM2/blob/master/MainMenu.PNG)
+![Alert Box](https://github.com/CSUS-CSC-131-Spring2018/S4T2TM2/blob/master/AlertBox.PNG)
