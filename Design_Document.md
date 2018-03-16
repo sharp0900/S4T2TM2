@@ -3,22 +3,24 @@
 - Group Members: Victor, Angela, Kevin, Emily
 # Introduction:
 
-[//]: # (TODO: improve introduction)
-
 ## GUI: will open up the program to more users
 - Agile development is not limited to just programmers. A GUI would make interfacing with the program easier for artists, designers, managers, and so on.
 - Limiting the format in which users can enter data makes it easier to check for valid input and check for errors.
 
 
 ### Customer: 
-- This program is intended for individuals or teams working in an AGILE development environment.
+- This program is intended for individuals or teams working in an AGILE development environment. Programmers, designers, and managers alike can benefit from using our task manager software.
 
 
 ### Reasons for using program: 
-- Out program is intended to be a tool that is useful for managing tasks while being very simple and easy to use.
+- Our program is intended to be a tool that is useful for managing tasks while being very simple and easy to use. For students and professionals alike, time is an extremely important resource. Managing time and making sure time is getting dispensed appropriately between projects is an important concept, and a good task manager software should help improve the user's workflow. Professionals can benefit from having a tool to track their time in order to bill their clients accurately and with ease. A good task management program should also take some of the stress away from having to keep track of many deadlines and priorities. Our program also aims to help the user prioritize their time by using notifications based on their deadlines.
 
 ### Interface would have: 
-- all possible options display, feedback, **view settings**
+- A simple, easy to use menu
+- Quick navigation to any operation
+- A display setting that lets users customize their experince
+- Immediate feedback on all operations
+- Notifications about upcoming deadlines
 
 # Product Reviews: (Good ideas from other Task Managing Software)
 [//]: # (TODO: more product reviews)
@@ -27,6 +29,23 @@
 - each task has a button
 - when creating a new task a new window pops up to give task details
 - Simple design with sidebar
+
+#### [trello.com](trello.com) Product Review
+- Trello has a very extensive user connection platform for agile users
+- Organization:
+- Boards contain lists
+- A board is to delineate by organization or group
+- Entire contents of a board can be moved or deleted all at once
+- Lists contain tasks, can be private or public
+- Lists have the capibility to be shared with organizations or groups
+- Tasks have a main description
+- Tasks can be assigned a user of an organization
+- Tasks have a 'comments' thread to act as updates
+- Tasks can be color coordinated or labeled
+- Tasks have due dates
+- Tasks have a checklist
+- Tasks have a place to add links or attachments
+- Filters are used to show different views such as sort by due dates, user, label
 
 # Project Overview:
 ### What is the same?
@@ -63,31 +82,32 @@
 |REQ11	|Users should be able to edit all details of a task stored in the database.|
 |REQ12	|System should provide immediate feedback whenever something is successfully added to the database.|
 
-##User Stories
- [//]: # (TODO: put into formal user story UML diagram)
+## User Stories
  
 ### manager: 
-- View total time spent on project
-- View statistics for users
-- Can edit time entries in the database
+- As a manager, I can view total time spent on project in order to monitor my team.
+- As a manager, I can view statistics on developers in order to monitor my team.
+- As a manager, I can edit time entries in the database to make sure my team's records are accurate despite mistakes.
 
 ### developer: 
-- Can add tasks
-- Can start and stop tasks
-- Can add descriptions of tasks
-- Can rename tasks
-- Can delete tasks
-- Can view total time spent on tasks
-- Can view stats on tasks
-- Can give a task a size
+- As a developer, I can add tasks to my list to keep track of what I need to do.
+- As a developer, I can start and stop tasks to keep track of how my time is spent.
+- As a developer, I can add descriptions of tasks to add detail to the log entries.
+- As a developer, I can give a task a size to guide my timeline expectations.
+- As a developer, I can give a task a description to me help prioritize my time.
+- As a developer, I can rename tasks if design specifications change.
+- As a developer, I can archive tasks I am no longer working on to de-clutter my workspace.
+- As a developer, I can view total time spent on tasks so I can report that time to clients/managers.
+- As a developer, I can view stats on tasks to  to better optimize my workflow.
+- As a developer, I can assign tasks into folders to keep my workspace organized.
 
 ## Use Cases:
 ### 1. Start New Task 
 - **Related Requirements:** REQ1, REQ12
-- **Initiating Actor:** Employee
+- **Initiating Actor:** Developer
 - **Actor's Goal:** To mark the timestamp at which work started on current session
 - **Participating Actors:** Task, Interface, Database
-- **Preconditions:**The task selected must not be an active task.
+- **Preconditions:** The task selected must not be an active task.
 - **Postconditions:** A task will have been started in the database.
 - **Flow of Events for Main Success Scenario**
 	1. User selects "Start Task" button
@@ -99,7 +119,7 @@
 
 ### 2. Stop Existing Task 
 - **Related Requirements:** REQ1, REQ12
-- **Initiating Actor:** Employee
+- **Initiating Actor:** Developer
 - **Actor's Goal:** To mark the timestamp at which work stopped on current session
 - **Participating Actors:** Task, Interface, Database
 - **Preconditions:** There is at least one active session in database.
@@ -113,7 +133,7 @@
 
 ### 3. Describe New or Existing Task
 - **Related Requirements:** REQ3, REQ11, REQ12
-- **Initiating Actor:** Employee
+- **Initiating Actor:** Developer
 - **Actor's Goal:** To add useful information about a task to the database as a description
 - **Participating Actors:** TaskList, Interface, Database
 - **Preconditions:** None
@@ -128,7 +148,7 @@
 
 ### 4. Delete Existing Task
 - **Related Requirements:** REQ9, REQ12
-- **Initiating Actor:** Employee
+- **Initiating Actor:** Developer
 - **Actor's Goal:** To archive a task and remove it from the main database
 - **Participating Actors:** TaskList, Interface, Database
 - **Preconditions:** Task to be deleted already exists
@@ -143,7 +163,7 @@
 
 ### 5. Rename Task
 - **Related Requirements:** REQ11, REQ12
-- **Initiating Actor:** Employee
+- **Initiating Actor:** Developer
 - **Actor's Goal:** To give an existing task a different name
 - **Participating Actors:** TaskList, Interface, Database
 - **Preconditions:** Task to be renamed already exists
@@ -159,7 +179,7 @@
 
 ### 6. Size New or Existing Task
 - **Related Requirements:** REQ5, REQ7, REQ11, REQ12
-- **Initiating Actor:** Employee
+- **Initiating Actor:** Developer
 - **Actor's Goal:** To add useful information about a task to the database as a description
 - **Participating Actors:** TaskList, Interface, Database
 - **Preconditions:** None
@@ -174,7 +194,7 @@
 
 ### 7. Add Deadline to New or Existing Task
 - **Related Requirements:** REQ7, REQ8, REQ11, REQ12
-- **Initiating Actor:** Employee
+- **Initiating Actor:** Developer
 - **Actor's Goal:** To add a deadline to a task in order to plan and prioritize.
 - **Participating Actors:** Task, Interface, Database
 - **Preconditions:** None
@@ -190,7 +210,7 @@
 
 ### 8. View Stats for Tasks 
 - **Related Requirements:** REQ1, REQ2, REQ4, REQ5, REQ6, REQ7, REQ9, REQ10, REQ11
-- **Initiating Actor:** Employee
+- **Initiating Actor:** Developer
 - **Actor's Goal:** To view stats for tasks in database
 - **Participating Actors:** TaskList, Interface, Database
 - **Preconditions:** None
@@ -223,7 +243,7 @@
 
 ### 10. Classify Tasks Into a Category
 - **Related Requirements:** REQ7, REQ10, REQ11, REQ12
-- **Initiating Actor:** Employee
+- **Initiating Actor:** Developer
 - **Actor's Goal:** To place a task into a certain group.
 - **Participating Actors:** Tasklist, Interface, Database
 - **Preconditions:** None
@@ -237,25 +257,55 @@
 	1. If there are no tasks to display, the program displays "None." 
 	2. There is a cancel button users can click instead of editing.
 
+	### 11. Color Code Tasks
+- **Related Requirements:** 
+- **Initiating Actor:** Developer
+- **Actor's Goal:** To color code a task, or multipule, a certin color for eaiser viewing
+- **Participating Actors:** Tasklist, Interface, Database
+- **Preconditions:** Task has to exist
+- **Postconditions:** A task will be displayed with a certain color
+- **Flow of Events for Main Success Scenario**
+	1. User selects "Change Task Color" button
+	2. A menu will pop up and prompt the User to select a task, or multiple.
+	3. User will then select a box filled in with the colors that are avaliable, or enter in their own via hex.
+	4. When user hits apply, it will prompt the user that task color has been changed.
+- **Flow of Events for Alternate Scenario**
+	1. If there are no tasks to display, the program displays "None." 
+	2. There is a cancel button users can click instead of editing.
+
+	### 12. Warning Prompt
+- **Related Requirements:** 
+- **Initiating Actor:** Developer
+- **Actor's Goal:** To prompt and ask the user, when creating a task of the same name, if what they are doing is what they want to be done.
+- **Participating Actors:** Tasklist, Interface, Database
+- **Preconditions:** User creates a task that already exist.
+- **Postconditions:** The user will either create a new task with a diffrient name, or start the task of the same name. 
+- **Flow of Events for Main Success Scenario**
+	1. User selects "Start Task" button
+	2. A menu will prompt the user that the task already exist and ask if he\she wants to start a new task with a diffrient name instead or continue the task that already exists.
+	3. The user will select either yes, they want to start a new task under a diffrient name, or no, start the existing task under said name.
+- **Flow of Events for Alternate Scenario**
+	1. If the user selects a task currently in process, the database displays "That task has already been started at <TIMESTAMP>"
+	2. There is a cancel button users can click instead of continuing this processes.
 
 # Traceability Matrix:
 
-|Requirement|UC1|UC2|UC3|UC4|UC5|UC6|UC7|UC8|UC9|UC10|
-|-----------|---|---|---|---|---|---|---|---|---|---|
-|REQ1		| X | X |   |   |   |   |   | X | X |   |
-|REQ2		|   |   |   |   |   |   |   | X |   |   |
-|REQ3		|   |   |   |   |   |   |   |   | X |   |
-|REQ4		|   |   | X |   |   |   |   | X |   |   |
-|REQ5		|   |   |   |   |   | X |   | X |   |   |
-|REQ6		|   |   |   |   |   |   |   | X |   |   |
-|REQ7		|   |   |   |   |   | X | X | X |   | X |
-|REQ8		|   |   |   |   |   |   | X |   |   |   |
-|REQ9		|   |   |   | X |   |   |   | X |   |   |
-|REQ10		|   |   |   |   |   |   |   | X |   | X |
-|REQ11		|   |   | X |   | X | X | X | X | X | X |
-|REQ12		| X | X | X | X | X | X | X |   | X | X |
+|Requirement|UC1|UC2|UC3|UC4|UC5|UC6|UC7|UC8|UC9|UC10|UC11|UC12|
+|-----------|---|---|---|---|---|---|---|---|---|---|---|---|
+|REQ1		| X | X |   |   |   |   |   | X | X |   |   | X |
+|REQ2		|   |   |   |   |   |   |   | X |   |   |   |   |
+|REQ3		|   |   |   |   |   |   |   |   | X |   |   |   |
+|REQ4		|   |   | X |   |   |   |   | X |   |   |   |   |
+|REQ5		|   |   |   |   |   | X |   | X |   |   |   |   |
+|REQ6		|   |   |   |   |   |   |   | X |   |   |   |   |
+|REQ7		|   |   |   |   |   | X | X | X |   | X | X |   |
+|REQ8		|   |   |   |   |   |   | X |   |   |   |   |   |
+|REQ9		|   |   |   | X |   |   |   | X |   |   |   |   |
+|REQ10		|   |   |   |   |   |   |   | X |   | X |   |   |
+|REQ11		|   |   | X |   | X | X | X | X | X | X |   |   |
+|REQ12		| X | X | X | X | X | X | X |   | X | X | X | X |
 
-# Actors
+# Actors:
 |Actor|Actors Goal|Use Case Name|
 |--------------|----------------------------------------------------|---------------|
 |Manager          | To view total time spent on project  | UC-8  |
@@ -269,3 +319,5 @@
 |Developer        | To view total time spent on tasks |  UC-8 |
 |Developer        | To view stats on tasks | UC-8  |
 |Developer        | To give a task a size | UC-6  |
+
+![Use Case Diagram](https://github.com/CSUS-CSC-131-Spring2018/S4T2TM2/blob/master/Use_Case_Diagram.png)
