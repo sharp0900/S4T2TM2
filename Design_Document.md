@@ -22,6 +22,9 @@
 - Immediate feedback on all operations
 - Notifications about upcoming deadlines
 
+![Main Menu](https://github.com/CSUS-CSC-131-Spring2018/S4T2TM2/blob/master/MainMenu.PNG)
+![Alert Box](https://github.com/CSUS-CSC-131-Spring2018/S4T2TM2/blob/master/AlertBox.PNG)
+
 # Product Reviews: (Good ideas from other Task Managing Software)
 [//]: # (TODO: more product reviews)
 - Seperate tasks into classes
@@ -60,7 +63,6 @@
 
 # Project Architecture:
 [//]: # (TODO: use case diagram)
-[//]: # (TODO: diagram demo)
 - GUI Interface for user
 - logic for handling gui inputs
 - SQL database for storing GUI formatted input
@@ -102,6 +104,7 @@
 - As a developer, I can assign tasks into folders to keep my workspace organized.
 
 ## Use Cases:
+![Use Case Diagram](https://github.com/CSUS-CSC-131-Spring2018/S4T2TM2/blob/master/Use_Case_Diagram.png)
 ### 1. Start New Task 
 - **Related Requirements:** REQ1, REQ12
 - **Initiating Actor:** Developer
@@ -319,7 +322,3 @@
 |Developer        | To view total time spent on tasks |  UC-8 |
 |Developer        | To view stats on tasks | UC-8  |
 |Developer        | To give a task a size | UC-6  |
-
-![Use Case Diagram](https://github.com/CSUS-CSC-131-Spring2018/S4T2TM2/blob/master/Use_Case_Diagram.png)
-![Main Menu](https://github.com/CSUS-CSC-131-Spring2018/S4T2TM2/blob/master/MainMenu.PNG)
-![Alert Box](https://github.com/CSUS-CSC-131-Spring2018/S4T2TM2/blob/master/AlertBox.PNG)
