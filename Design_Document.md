@@ -319,3 +319,5 @@
 |Developer        | To view total time spent on tasks |  UC-8 |
 |Developer        | To view stats on tasks | UC-8  |
 |Developer        | To give a task a size | UC-6  |
+
+![Use Case Diagram](https://github.com/CSUS-CSC-131-Spring2018/S4T2TM2/blob/master/Use_Case_Diagram.png)
