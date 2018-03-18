@@ -1,0 +1,43 @@
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <center>
+        <TextArea prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+    </center>
+    <top>
+        <VBox BorderPane.alignment="CENTER">
+            <children>
+                <MenuBar>
+                    <menus>
+                        <Menu mnemonicParsing="false" text="File">
+                            <items>
+                                <MenuItem id="newTaskMenuItem" mnemonicParsing="false" onAction="#newTaskButton" text="New Task" />
+                                <MenuItem id="editTaskMenuItem" mnemonicParsing="false" onAction="#editTaskButton" text="Edit Task" />
+                                <MenuItem id="deleteTaskMenuItem" mnemonicParsing="false" onAction="#deleteTaskButton" text="Delete Task" />
+                            </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Help">
+                            <items>
+                                <MenuItem mnemonicParsing="false" text="About" />
+                            </items>
+                        </Menu>
+                    </menus>
+                </MenuBar>
+            </children>
+        </VBox>
+    </top>
+    <left>
+        <HBox BorderPane.alignment="CENTER">
+            <children>
+                <TreeView prefHeight="200.0" prefWidth="200.0" />
+            </children>
+        </HBox>
+    </left>
+</BorderPane>
