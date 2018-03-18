@@ -11,11 +11,12 @@ public class Controller
 {
     public void newTaskButton()
     {
-       openNewTaskWindow();
+       openNewTaskWindow("Create New Task");
     }
     public void editTaskButton()
     {
-        openNewTaskWindow();
+        //load this window with current task info
+        openNewTaskWindow("Edit Task");
     }
     public void deleteTaskButton()
     {
@@ -37,7 +38,7 @@ public class Controller
     {
         //close the newTaskWindow
     }
-    private void openNewTaskWindow()
+    private void openNewTaskWindow(String title)
     {
         try{
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("NewTaskMenu.fxml"));
@@ -45,7 +46,7 @@ public class Controller
             Stage stage = new Stage();
             stage.initModality(Modality.APPLICATION_MODAL);
             stage.initStyle(StageStyle.DECORATED);
-            stage.setTitle("Create New Task");
+            stage.setTitle(title);
             stage.setScene(new Scene(root1,500,350));
             stage.show();
         }
