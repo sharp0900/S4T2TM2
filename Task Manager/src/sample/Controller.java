@@ -20,6 +20,7 @@ public class Controller
     }
     public void deleteTaskButton()
     {
+        openDeleteTaskAlert();
         // delete task from database
         //update list of tasks
         //update task summary
@@ -48,6 +49,21 @@ public class Controller
             stage.initStyle(StageStyle.DECORATED);
             stage.setTitle(title);
             stage.setScene(new Scene(root1,500,300));
+            stage.show();
+        }
+        catch (Exception e){
+            System.err.println("ERROR: could not open New Task window");
+        }
+    }
+    private void openDeleteTaskAlert()
+    {
+        try{
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("DeleteTaskAlert.fxml"));
+            Parent root1 = fxmlLoader.load();
+            Stage stage = new Stage();
+            stage.initModality(Modality.APPLICATION_MODAL);
+            stage.initStyle(StageStyle.DECORATED);
+            stage.setScene(new Scene(root1));
             stage.show();
         }
         catch (Exception e){
