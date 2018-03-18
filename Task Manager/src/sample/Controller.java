@@ -47,7 +47,7 @@ public class Controller
             stage.initModality(Modality.APPLICATION_MODAL);
             stage.initStyle(StageStyle.DECORATED);
             stage.setTitle(title);
-            stage.setScene(new Scene(root1,500,350));
+            stage.setScene(new Scene(root1,500,300));
             stage.show();
         }
         catch (Exception e){
