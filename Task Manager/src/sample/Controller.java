@@ -19,7 +19,23 @@ public class Controller
     }
     public void deleteTaskButton()
     {
-
+        // delete task from database
+        //update list of tasks
+        //update task summary
+    }
+    public void aboutButton()
+    {
+        //open window with usage
+    }
+    public void saveButton()
+    {
+        //save all textfield entries to database
+        //update list of tasks
+        //update task summary
+    }
+    public void cancelButton()
+    {
+        //close the newTaskWindow
     }
     private void openNewTaskWindow()
     {
@@ -30,7 +46,7 @@ public class Controller
             stage.initModality(Modality.APPLICATION_MODAL);
             stage.initStyle(StageStyle.DECORATED);
             stage.setTitle("Create New Task");
-            stage.setScene(new Scene(root1));
+            stage.setScene(new Scene(root1,500,350));
             stage.show();
         }
         catch (Exception e){
