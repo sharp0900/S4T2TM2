@@ -1,5 +1,3 @@
-package sample;
-
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -8,14 +6,19 @@ import javafx.stage.Stage;
 
 public class Main extends Application {
 
-    public void start(Stage primaryStage) throws Exception{
+    Stage window;
+    public void start(Stage primaryStage) throws Exception
+    {
+        window = primaryStage;
         Parent root = FXMLLoader.load(getClass().getResource("MainMenu.fxml"));
-        primaryStage.setTitle("Task Manager");
-        primaryStage.setScene(new Scene(root, 800, 500));
-        primaryStage.show();
+        window.setTitle("Task Manager");
+        window.setScene(new Scene(root, 800, 500));
+        window.show();
     }
 
     public static void main(String[] args) {
         launch(args);
     }
+
+
 }
