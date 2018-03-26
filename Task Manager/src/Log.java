@@ -136,6 +136,7 @@ public class Log
                 entries.add(line);
                 line = br.readLine();
             }
+            br.close();
         }
         catch (Exception e)
         {

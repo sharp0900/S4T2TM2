@@ -146,4 +146,20 @@ public class Controller implements Initializable
     {
         //open window with usage
     }
+    public void startTask()
+    {
+        String selectedTask = taskListView.getSelectionModel().getSelectedItem();
+        System.out.println(selectedTask + " started...");
+
+        tmModel.startTask(selectedTask);
+    }
+    public void stopTask()
+    {
+        String selectedTask = taskListView.getSelectionModel().getSelectedItem();
+        System.out.println(selectedTask + " stopped...");
+
+        tmModel.stopTask(selectedTask);
+
+        //reload task summary view TODO
+    }
 }
