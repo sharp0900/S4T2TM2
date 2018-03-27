@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+    <top>
+        <VBox BorderPane.alignment="CENTER">
+            <children>
+                <MenuBar>
+                    <menus>
+                        <Menu mnemonicParsing="false" text="File">
+                            <items>
+                                <MenuItem fx:id="newTaskMenuItem" mnemonicParsing="false" onAction="#newTaskButton" text="New Task" />
+                            </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Help">
+                            <items>
+                                <MenuItem mnemonicParsing="false" text="About" />
+                            </items>
+                        </Menu>
+                    </menus>
+                </MenuBar>
+            </children>
+        </VBox>
+    </top>
+    <left>
+        <HBox BorderPane.alignment="CENTER">
+         <children>
+            <ListView fx:id="taskListView" onMouseClicked="#showTaskSummary" prefHeight="200.0" prefWidth="200.0">
+               <contextMenu>
+                  <ContextMenu>
+                    <items>
+                      <MenuItem fx:id="taskListViewEdit" mnemonicParsing="false" onAction="#editTaskButton" text="Edit" />
+                        <MenuItem fx:id="taskListViewDelete" mnemonicParsing="false" onAction="#deleteTaskButton" text="Delete" />
+                        <MenuItem fx:id="taskListViewStart" mnemonicParsing="false" onAction="#startTask" text="Start" />
+                        <MenuItem fx:id="taskListViewStop" mnemonicParsing="false" onAction="#stopTask" text="stop" />
+                    </items>
+                  </ContextMenu>
+               </contextMenu>
+            </ListView>
+         </children>
+        </HBox>
+    </left>
+   <center>
+      <TextArea fx:id="taskSummaryTextArea" editable="false" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

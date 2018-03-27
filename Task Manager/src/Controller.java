@@ -11,7 +11,7 @@ public class Controller implements Initializable
 {
     private TMModel tmModel;
     private TreeSet<String> taskNames;
-    private LinkedList<Task> tasks;
+    //private LinkedList<Task> tasks;
 
     @FXML
     public ListView<String> taskListView;
@@ -24,7 +24,7 @@ public class Controller implements Initializable
 
         tmModel = new TMModel();
         taskNames = tmModel.taskNames();
-        tasks = getAllTasks();
+        //tasks = getAllTasks();
 
         if(!taskNames.isEmpty())
         {
@@ -93,7 +93,7 @@ public class Controller implements Initializable
     }
     public void editTaskButton()
     {
-        TaskInput ti = new TaskInput();
+        TaskInput ti;
         Task oldTask = new Task(), newTask;
         String selectedTask;
 
@@ -108,10 +108,11 @@ public class Controller implements Initializable
             oldTask.setCategory(tmModel.taskCategory(selectedTask));
             oldTask.setDeadLine(tmModel.taskDeadLine(selectedTask));
         }
+        //load the selected task info into TextInputAlert
+        ti = new TaskInput(oldTask.getName(),oldTask.getDescription(),oldTask.getSize(),oldTask.getDeadLine(),oldTask.getCategory());
+
         //fill window with current task info
         showTaskSummary();
-
-        //load the selected task info into TextInputAlert
 
 
         //get new task details
@@ -121,6 +122,7 @@ public class Controller implements Initializable
             if(newTask.getName() != null)
                 tmModel.renameTask(oldTask.getName(),newTask.getName());
         }
+
         //probably need to delete selected task
 
         //make new task with given info

@@ -6,6 +6,46 @@ import java.util.Optional;
 
 public class TaskInput
 {
+    private Label nameLabel;
+    private Label descLabel;
+    private Label sizeLabel;
+    private Label deadLineLabel;
+    private Label categoryLabel;
+
+    private TextField nameText;
+    private TextField descText;
+    private TextField sizeText;
+    private TextField deadLineText;
+    private TextField categoryText;
+
+    public TaskInput(String name, String desc, String size, String deadLine, String category)
+    {
+        nameLabel = new Label("Task Name: ");
+        descLabel = new Label("Description: ");
+        sizeLabel = new Label("Size: ");
+        deadLineLabel = new Label("Deadline: ");
+        categoryLabel = new Label("Category: ");
+
+        nameText = new TextField(name);
+        descText = new TextField(desc);
+        sizeText = new TextField(size);
+        deadLineText = new TextField(deadLine);
+        categoryText = new TextField(category);
+    }
+    public TaskInput()
+    {
+        nameLabel = new Label("Task Name: ");
+        descLabel = new Label("Description: ");
+        sizeLabel = new Label("Size: ");
+        deadLineLabel = new Label("Deadline: ");
+        categoryLabel = new Label("Category: ");
+
+        nameText = new TextField();
+        descText = new TextField();
+        sizeText = new TextField();
+        deadLineText = new TextField();
+        categoryText = new TextField();
+    }
     public Task displayTaskDialog(String titleTxt)
     {
         Task tempTask = null;
@@ -15,17 +55,6 @@ public class TaskInput
         dialog.setHeaderText("Enter Task Information");
         dialog.setResizable(true);
 
-        Label nameLabel = new Label("Task Name: ");
-        Label descLabel = new Label("Description: ");
-        Label sizeLabel = new Label("Size: ");
-        Label deadLineLabel = new Label("Deadline: ");
-        Label categoryLabel = new Label("Category: ");
-
-        TextField nameText = new TextField();
-        TextField descText = new TextField();
-        TextField sizeText = new TextField();
-        TextField deadLineText = new TextField();
-        TextField categoryText = new TextField();
 
         GridPane grid = new GridPane();
         grid.add(nameLabel, 1, 1);
