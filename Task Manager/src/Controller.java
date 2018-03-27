@@ -66,12 +66,8 @@ public class Controller implements Initializable
         taskSummaryTextArea.setText(t.toString());
 
     }
-    public void newTaskButton()
+    private void makeNewTask(Task newTask)
     {
-        TaskInput ti = new TaskInput();
-        Task newTask = ti.displayTaskDialog("New Task");
-
-        //check if tasks already exists
         if(newTask!=null)
         {
 
@@ -86,6 +82,14 @@ public class Controller implements Initializable
 
             tmModel = new TMModel(); //reload the log file
         }
+    }
+    public void newTaskButton()
+    {
+        TaskInput ti = new TaskInput();
+        Task newTask = ti.displayTaskDialog("New Task");
+
+        //check if tasks already exists
+        makeNewTask(newTask);
     }
     private void updateTask(Task t)
     {
@@ -124,8 +128,10 @@ public class Controller implements Initializable
         }
 
         //probably need to delete selected task
+        deleteTaskButton();
 
         //make new task with given info
+        makeNewTask(newTask);
 
     }
     public void deleteTaskButton()
@@ -140,7 +146,7 @@ public class Controller implements Initializable
         taskSelected.forEach(allTasks::remove);
 
         // delete task from database
-        tmModel.deleteTask(selectedTask); //this isn't deleting for some reason TODO
+        tmModel.deleteTask(selectedTask);
         //tmModel = new TMModel(); //reload log file
         taskSummaryTextArea.clear();
     }
