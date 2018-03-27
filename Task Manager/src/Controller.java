@@ -46,25 +46,35 @@ public class Controller implements Initializable
         }
         return allTasks;
     }
-    public void showTaskSummary()
+    private Task getTask(String taskName)
     {
         Task t = new Task();
-        System.out.println("loading selected task summary...");
+        t.setName(taskName);
+        t.setDescription(tmModel.taskDescription(taskName));
+        t.setSize(tmModel.taskSize(taskName));
+        t.setElapsedTime(tmModel.taskElapsedTime(taskName));
+        t.setDeadLine(tmModel.taskDeadLine(taskName));
+        t.setCategory(tmModel.taskDeadLine(taskName));
+        return t;
+    }
+    public void showTaskSummary()
+    {
+        Task t;
+        System.out.print("loading selected task summary: ");
 
         //get selected name from the list of tasks
+
         String selectedTaskName = taskListView.getSelectionModel().getSelectedItem();
+        if(selectedTaskName!=null)
+        {
+            System.out.println(selectedTaskName);
 
-        //load temp task with the selected tasks data
-        t.setName(selectedTaskName);
-        System.out.println(t.getName());
-        t.setDescription(tmModel.taskDescription(selectedTaskName));
-        t.setSize(tmModel.taskSize(selectedTaskName));
-        t.setElapsedTime(tmModel.taskElapsedTime(selectedTaskName));
-        t.setDeadLine(tmModel.taskDeadLine(selectedTaskName));
-        t.setCategory(tmModel.taskDeadLine(selectedTaskName));
+            //load temp task with the selected tasks data
+            t = getTask(selectedTaskName);
 
-        taskSummaryTextArea.setText(t.toString());
-
+            taskSummaryTextArea.setText(t.toString());
+        }
+        else taskSummaryTextArea.setText("Select a Task or Create a new Task");
     }
     private void makeNewTask(Task newTask)
     {
@@ -79,42 +89,32 @@ public class Controller implements Initializable
             tmModel.sizeTask(newTask.getName(),newTask.getSize());
             tmModel.deadLineTask(newTask.getName(), newTask.getDeadLine());
             tmModel.categoryTask(newTask.getName(), newTask.getCategory());
-
-            tmModel = new TMModel(); //reload the log file
         }
     }
     public void newTaskButton()
     {
         TaskInput ti = new TaskInput();
         Task newTask = ti.displayTaskDialog("New Task");
-        
+
         makeNewTask(newTask);
+        reloadTextArea();
     }
     public void editTaskButton()
     {
-        TaskInput ti;
+        TaskInput editWindow;
         Task oldTask = new Task(), newTask;
         String selectedTask;
 
         //get old task info
         selectedTask = taskListView.getSelectionModel().getSelectedItem();
         if(selectedTask != null)
-        {
-            oldTask.setName(selectedTask);
-            oldTask.setDescription(tmModel.taskDescription(selectedTask));
-            oldTask.setSize(tmModel.taskSize(selectedTask));
-            oldTask.setElapsedTime(tmModel.taskElapsedTime(selectedTask));
-            oldTask.setCategory(tmModel.taskCategory(selectedTask));
-            oldTask.setDeadLine(tmModel.taskDeadLine(selectedTask));
-        }
-        //load the selected task info into TextInputAlert
-        ti = new TaskInput(oldTask.getName(),oldTask.getDescription(),oldTask.getSize(),oldTask.getDeadLine(),oldTask.getCategory());
+            oldTask = getTask(selectedTask);
 
-        //fill window with current task info
-        showTaskSummary();
+        //load the selected task info into TextInputAlert
+        editWindow = new TaskInput(oldTask);
 
         //get new task details
-        newTask = ti.displayTaskDialog("Edit Task");
+        newTask = editWindow.displayTaskDialog("Edit Task");
         if(newTask!=null)
         {
             if(newTask.getName() != null)
@@ -127,16 +127,18 @@ public class Controller implements Initializable
     }
     public void deleteTaskButton()
     {
+        int selectedId;
         String selectedTask = taskListView.getSelectionModel().getSelectedItem();
         System.out.println(selectedTask + " deleted...");
 
-        ObservableList<String> taskSelected, allTasks;
+        ObservableList<String> allTasks;
         allTasks = taskListView.getItems();
-        taskSelected = taskListView.getSelectionModel().getSelectedItems();
-        taskSelected.forEach(allTasks::remove);
+
+        selectedId = taskListView.getSelectionModel().getSelectedIndex();
+        allTasks.remove(selectedId);
 
         tmModel.deleteTask(selectedTask);
-
+        taskSummaryTextArea.clear();
         reloadTextArea();
     }
     public void aboutButton()

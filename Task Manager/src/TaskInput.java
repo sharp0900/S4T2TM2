@@ -18,7 +18,7 @@ public class TaskInput
     private TextField deadLineText;
     private TextField categoryText;
 
-    public TaskInput(String name, String desc, String size, String deadLine, String category)
+    public TaskInput(Task task)
     {
         nameLabel = new Label("Task Name: ");
         descLabel = new Label("Description: ");
@@ -26,11 +26,11 @@ public class TaskInput
         deadLineLabel = new Label("Deadline: ");
         categoryLabel = new Label("Category: ");
 
-        nameText = new TextField(name);
-        descText = new TextField(desc);
-        sizeText = new TextField(size);
-        deadLineText = new TextField(deadLine);
-        categoryText = new TextField(category);
+        nameText = new TextField(task.getName());
+        descText = new TextField(task.getDescription());
+        sizeText = new TextField(task.getSize());
+        deadLineText = new TextField(task.getDeadLine());
+        categoryText = new TextField(task.getCategory());
     }
     public TaskInput()
     {
