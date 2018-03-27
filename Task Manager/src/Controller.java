@@ -87,13 +87,8 @@ public class Controller implements Initializable
     {
         TaskInput ti = new TaskInput();
         Task newTask = ti.displayTaskDialog("New Task");
-
-        //check if tasks already exists
+        
         makeNewTask(newTask);
-    }
-    private void updateTask(Task t)
-    {
-        //update task
     }
     public void editTaskButton()
     {
@@ -118,7 +113,6 @@ public class Controller implements Initializable
         //fill window with current task info
         showTaskSummary();
 
-
         //get new task details
         newTask = ti.displayTaskDialog("Edit Task");
         if(newTask!=null)
@@ -129,17 +123,10 @@ public class Controller implements Initializable
             deleteTaskButton();
             makeNewTask(newTask);
         }
-
-        //probably need to delete selected task
-        //deleteTaskButton();
-
-        //make new task with given info
-        //makeNewTask(newTask);
-
+        reloadTextArea();
     }
     public void deleteTaskButton()
     {
-        tmModel = new TMModel();
         String selectedTask = taskListView.getSelectionModel().getSelectedItem();
         System.out.println(selectedTask + " deleted...");
 
@@ -148,10 +135,9 @@ public class Controller implements Initializable
         taskSelected = taskListView.getSelectionModel().getSelectedItems();
         taskSelected.forEach(allTasks::remove);
 
-        // delete task from database
         tmModel.deleteTask(selectedTask);
-        //tmModel = new TMModel(); //reload log file
-        taskSummaryTextArea.clear();
+
+        reloadTextArea();
     }
     public void aboutButton()
     {
@@ -171,6 +157,11 @@ public class Controller implements Initializable
 
         tmModel.stopTask(selectedTask);
 
-        //reload task summary view TODO
+        reloadTextArea();
+    }
+    private void reloadTextArea()
+    {
+        tmModel = new TMModel();
+        showTaskSummary();
     }
 }
