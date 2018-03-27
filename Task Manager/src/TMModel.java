@@ -81,8 +81,8 @@ public class TMModel implements ITMMODEL
                     sb.append(" ");
                 }
                 sb.append(" ");
-                description = sb.toString();
             }
+            description = sb.toString();
         }
         return description;
     }

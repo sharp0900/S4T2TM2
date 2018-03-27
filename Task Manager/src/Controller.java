@@ -70,7 +70,7 @@ public class Controller implements Initializable
     {
         if(newTask!=null)
         {
-
+            System.out.println(newTask.getName() + " created...");
             taskListView.getItems().add(newTask.getName()); //else add the task name to the list
 
             tmModel.startTask(newTask.getName());
@@ -125,13 +125,16 @@ public class Controller implements Initializable
         {
             if(newTask.getName() != null)
                 tmModel.renameTask(oldTask.getName(),newTask.getName());
+
+            deleteTaskButton();
+            makeNewTask(newTask);
         }
 
         //probably need to delete selected task
-        deleteTaskButton();
+        //deleteTaskButton();
 
         //make new task with given info
-        makeNewTask(newTask);
+        //makeNewTask(newTask);
 
     }
     public void deleteTaskButton()
