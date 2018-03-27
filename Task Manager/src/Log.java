@@ -50,7 +50,9 @@ public class Log
         return taskName;
     }
     
-   
+   /*
+    * Formats data for entry into log
+    */
     private String getnewLine(String line, String taskName)
     {
         StringTokenizer st = new StringTokenizer(line);
@@ -70,6 +72,8 @@ public class Log
         }
         return sb.toString();
     }
+    
+    
     public boolean renameTask(String taskName, String newName)
     {
         File inputFile = new File(fileName);
@@ -107,6 +111,7 @@ public class Log
         tempFile.renameTo(inputFile);
         return noErrors;
     }
+    
     public boolean deleteTask(String taskName)
     {
         File inputFile = new File(fileName);
@@ -140,6 +145,9 @@ public class Log
         tempFile.renameTo(inputFile);
         return b;
     }
+    /*
+     * 
+     */
     public LinkedList<String> readEntries()
     {
         entries.clear();
