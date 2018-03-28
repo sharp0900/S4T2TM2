@@ -9,8 +9,16 @@ public class Log
     private String fileName;
     private LinkedList<String> entries = new LinkedList<>();
 
+    /*
+     * constructor
+     * builds from filename
+     */
     Log(String fileName) {this.fileName=fileName;}
 
+    /*
+     * write function
+     * writes String parameter to member file
+     */
     public boolean write(String format)
     {
         boolean b = true;
@@ -27,6 +35,12 @@ public class Log
         }
         return b;
     }
+    /*
+     * Given a string from the log file,
+     * this function takes the first word (which should be name)
+     * and returns it.
+     * Only works if task names are single-word entries?
+     */
     private String extractName(String entry)
     {
         StringTokenizer st = new StringTokenizer(entry);
@@ -37,6 +51,10 @@ public class Log
 
         return taskName;
     }
+    
+   /*
+    * Formats data for entry into log
+    */
     private String getnewLine(String line, String taskName)
     {
         StringTokenizer st = new StringTokenizer(line);
@@ -56,6 +74,8 @@ public class Log
         }
         return sb.toString();
     }
+    
+    
     public boolean renameTask(String taskName, String newName)
     {
         File inputFile = new File(fileName);
@@ -93,6 +113,7 @@ public class Log
         tempFile.renameTo(inputFile);
         return noErrors;
     }
+    
     public boolean deleteTask(String taskName)
     {
         File inputFile = new File(fileName);
@@ -126,6 +147,9 @@ public class Log
         tempFile.renameTo(inputFile);
         return b;
     }
+    /*
+     * 
+     */
     public LinkedList<String> readEntries()
     {
         entries.clear();
