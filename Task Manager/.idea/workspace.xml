@@ -1,34 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Task Manager.iml" afterPath="$PROJECT_DIR$/Task Manager.iml" />
-      <change beforePath="$PROJECT_DIR$/log.txt" afterPath="$PROJECT_DIR$/log.txt" />
-      <change beforePath="$PROJECT_DIR$/out/production/Task Manager/Controller.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Task Manager/ITMMODEL.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Task Manager/Log.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Task Manager/Main.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Task Manager/MainMenu.fxml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Task Manager/TMModel.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Task Manager/Task.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Task Manager/TaskInput$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Task Manager/TaskInput.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Task Manager/Time.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/Controller.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/ITMMODEL.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/Log.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/MainMenu.fxml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/TMModel.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/Task.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/TaskInput.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/Time.java" afterPath="" />
-    </list>
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="" />
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -559,12 +532,12 @@
       <workItem from="1522202684373" duration="3000" />
       <workItem from="1522263616029" duration="141000" />
       <workItem from="1522263795691" duration="1619000" />
-      <workItem from="1522265443317" duration="816000" />
+      <workItem from="1522265443317" duration="1008000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18783000" />
+    <option name="totallyTimeSpent" value="18975000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1920" height="998" extended-state="6" />
