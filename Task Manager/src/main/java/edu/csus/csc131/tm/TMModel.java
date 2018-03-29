@@ -86,8 +86,8 @@ public class TMModel implements ITMMODEL {
                     sb.append(" ");
                 }
                 sb.append(" ");
+                description = sb.toString();
             }
-            description = sb.toString();
         }
         return description;
     }
@@ -210,7 +210,7 @@ public class TMModel implements ITMMODEL {
     public String taskCategory(String name)
     {
         String category = "";
-        StringBuilder sb = new StringBuilder();
+        //StringBuilder sb = new StringBuilder();
         for (String s : entries) {
             if (s.contains("category") && s.contains(name)) {
                 StringTokenizer stok = new StringTokenizer(s);
@@ -225,7 +225,7 @@ public class TMModel implements ITMMODEL {
     public String taskDeadLine (String name)
     {
         String deadLine = "";
-        StringBuilder sb = new StringBuilder();
+        //StringBuilder sb = new StringBuilder();
         for (String s : entries)
         {
             if (s.contains("deadLine") && s.contains(name)) {

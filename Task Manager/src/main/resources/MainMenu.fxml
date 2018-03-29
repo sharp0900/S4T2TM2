@@ -27,6 +27,7 @@
             <ToolBar>
               <items>
                   <Button fx:id="newTaskButton" mnemonicParsing="false" onAction="#newTaskButton">
+                      <tooltip> <Tooltip text="New Task"/> </tooltip>
                      <graphic>
                         <ImageView>
                            <image>
@@ -36,6 +37,7 @@
                      </graphic>
                   </Button>
                   <Button fx:id="startButton" mnemonicParsing="false" onAction="#startTask">
+                      <tooltip> <Tooltip text="Start Task"/> </tooltip>
                      <graphic>
                         <ImageView>
                            <image>
@@ -44,6 +46,7 @@
                         </ImageView>
                      </graphic></Button>
                   <Button fx:id="stopButton" mnemonicParsing="false" onAction="#stopTask">
+                      <tooltip> <Tooltip text="Stop Task"/> </tooltip>
                      <graphic>
                         <ImageView>
                            <image>
@@ -52,6 +55,7 @@
                         </ImageView>
                      </graphic></Button>
                   <Button fx:id="editbutton" mnemonicParsing="false" onAction="#editTaskButton">
+                      <tooltip> <Tooltip text="Edit Task"/> </tooltip>
                      <graphic>
                         <ImageView>
                            <image>
@@ -60,6 +64,7 @@
                         </ImageView>
                      </graphic></Button>
                   <Button fx:id="deleteButton" mnemonicParsing="false" onAction="#deleteTaskButton">
+                      <tooltip> <Tooltip text="Delete Task"/> </tooltip>
                      <graphic>
                         <ImageView>
                            <image>
@@ -68,6 +73,7 @@
                         </ImageView>
                      </graphic></Button>
                   <Button fx:id="calcButton" mnemonicParsing="false">
+                      <tooltip> <Tooltip text="Calculate"/> </tooltip>
                      <graphic>
                         <ImageView>
                            <image>
@@ -76,6 +82,7 @@
                         </ImageView>
                      </graphic></Button>
                   <Button fx:id="sortButton" mnemonicParsing="false">
+                      <tooltip> <Tooltip text="Sort Tasks"/> </tooltip>
                      <graphic>
                         <ImageView>
                            <image>
