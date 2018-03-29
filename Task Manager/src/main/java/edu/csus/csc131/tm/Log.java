@@ -78,7 +78,7 @@ public class Log
     public boolean renameTask(String taskName, String newName)
     {
         File inputFile = new File(fileName);
-        File tempFile = new File("myTempFile.txt");
+        File tempFile = new File("tmp.txt");
         boolean noErrors = true;
         try
         {
@@ -116,7 +116,7 @@ public class Log
     public boolean deleteTask(String taskName)
     {
         File inputFile = new File(fileName);
-        File tempFile = new File("myTempFile.txt");
+        File tempFile = new File("tmp.txt");
         boolean b = true;
         try
         {

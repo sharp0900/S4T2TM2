@@ -19,6 +19,8 @@ public class TaskInput
     private TextField deadLineText;
     private TextField categoryText;
 
+    private DatePicker datePicker;
+
     public TaskInput(Task task)
     {
         nameLabel = new Label("Task Name: ");
@@ -32,6 +34,7 @@ public class TaskInput
         sizeText = new TextField(task.getSize());
         deadLineText = new TextField(task.getDeadLine());
         categoryText = new TextField(task.getCategory());
+        datePicker = new DatePicker();
     }
     public TaskInput()
     {
@@ -46,6 +49,7 @@ public class TaskInput
         sizeText = new TextField();
         deadLineText = new TextField();
         categoryText = new TextField();
+        datePicker = new DatePicker();
     }
     public Task displayTaskDialog(String titleTxt)
     {
@@ -71,8 +75,7 @@ public class TaskInput
 
 
         grid.add(deadLineLabel, 1, 4);
-        grid.add(deadLineText, 2, 4);
-
+        grid.add(datePicker,2,4);
 
         grid.add(categoryLabel, 1, 5);
         grid.add(categoryText, 2, 5);

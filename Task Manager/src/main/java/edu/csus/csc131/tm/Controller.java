@@ -13,7 +13,6 @@ public class Controller implements Initializable
 {
     private TMModel tmModel;
     private TreeSet<String> taskNames;
-    private Tooltip tooltip;
     //private LinkedList<Task> tasks;
 
     @FXML
