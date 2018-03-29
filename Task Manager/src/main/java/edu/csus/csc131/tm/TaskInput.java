@@ -17,7 +17,6 @@ public class TaskInput
     private TextField nameText;
     private TextField descText;
     private TextField sizeText;
-    private TextField deadLineText;
     private TextField categoryText;
 
     private DatePicker datePicker;
@@ -33,9 +32,9 @@ public class TaskInput
         nameText = new TextField(task.getName());
         descText = new TextField(task.getDescription());
         sizeText = new TextField(task.getSize());
-        deadLineText = new TextField(task.getDeadLine());
         categoryText = new TextField(task.getCategory());
-        datePicker = new DatePicker();
+        localDate = LocalDate.parse(task.getDeadLine());
+        datePicker = new DatePicker(localDate);
     }
     public TaskInput()
     {
@@ -48,7 +47,6 @@ public class TaskInput
         nameText = new TextField();
         descText = new TextField();
         sizeText = new TextField();
-        deadLineText = new TextField();
         categoryText = new TextField();
         datePicker = new DatePicker();
     }
