@@ -22,7 +22,7 @@ public class TaskInput
 
     public TaskInput(Task task)
     {
-        nameLabel = new Label("edu.csus.csc131.tm.Task Name: ");
+        nameLabel = new Label("Task Name: ");
         descLabel = new Label("Description: ");
         sizeLabel = new Label("Size: ");
         deadLineLabel = new Label("Deadline: ");
@@ -36,7 +36,7 @@ public class TaskInput
     }
     public TaskInput()
     {
-        nameLabel = new Label("edu.csus.csc131.tm.Task Name: ");
+        nameLabel = new Label("Task Name: ");
         descLabel = new Label("Description: ");
         sizeLabel = new Label("Size: ");
         deadLineLabel = new Label("Deadline: ");
@@ -54,7 +54,7 @@ public class TaskInput
 
         Dialog<Task> dialog = new Dialog<>();
         dialog.setTitle(titleTxt);
-        dialog.setHeaderText("Enter edu.csus.csc131.tm.Task Information");
+        dialog.setHeaderText("Enter Task Information");
         dialog.setResizable(true);
 
 

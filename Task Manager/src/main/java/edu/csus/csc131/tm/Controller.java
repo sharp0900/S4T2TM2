@@ -13,7 +13,7 @@ public class Controller implements Initializable
 {
     private TMModel tmModel;
     private TreeSet<String> taskNames;
-    //private LinkedList<edu.csus.csc131.tm.Task> tasks;
+    //private LinkedList<Task> tasks;
 
     @FXML
     public ListView<String> taskListView;
@@ -36,7 +36,7 @@ public class Controller implements Initializable
             }
 
         }
-        taskSummaryTextArea.setText("Select a edu.csus.csc131.tm.Task or Create a new edu.csus.csc131.tm.Task");
+        taskSummaryTextArea.setText("Select a Task or Create a new Task");
     }
     private LinkedList<Task> getAllTasks()
     {
@@ -76,7 +76,7 @@ public class Controller implements Initializable
 
             taskSummaryTextArea.setText(t.toString());
         }
-        else taskSummaryTextArea.setText("Select a edu.csus.csc131.tm.Task or Create a new edu.csus.csc131.tm.Task");
+        else taskSummaryTextArea.setText("Select a Task or Create a new Task");
     }
     private void makeNewTask(Task newTask)
     {
@@ -97,7 +97,7 @@ public class Controller implements Initializable
     public void newTaskButton()
     {
         TaskInput ti = new TaskInput();
-        Task newTask = ti.displayTaskDialog("New edu.csus.csc131.tm.Task");
+        Task newTask = ti.displayTaskDialog("New Task");
 
         makeNewTask(newTask);
         reloadTextArea();
@@ -117,7 +117,7 @@ public class Controller implements Initializable
         editWindow = new TaskInput(oldTask);
 
         //get new task details
-        newTask = editWindow.displayTaskDialog("Edit edu.csus.csc131.tm.Task");
+        newTask = editWindow.displayTaskDialog("Edit Task");
         if(newTask!=null)
         {
             if(newTask.getName() != null)

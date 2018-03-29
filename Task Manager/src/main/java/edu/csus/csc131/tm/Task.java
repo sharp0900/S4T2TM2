@@ -67,12 +67,12 @@ public class Task
         this.category = category;
     }
 
-    public String toString() {
-        return "edu.csus.csc131.tm.Task Name: " + name + "\n" +
-                "Description: " + description + "\n" +
-                "Size: " + size + "\n" +
-                "DeadLine: " + deadLine +"\n" +
-                "ElapsedTime: " + elapsedTime + "\n" +
-                "Category: " + category + "\n";
+     public String toString() {
+        return "Task Name: " + ((name==null)? " ":name) + "\n" +
+                "Description: " + ((description==null)? " ":description) + "\n" +
+                "Size: " + ((size==null)? " ":size) + "\n" +
+                "DeadLine: " + ((deadLine==null)? " ":deadLine) +"\n" +
+                "ElapsedTime: " + ((elapsedTime==null)? " ":elapsedTime) + "\n" +
+                "Category: " + ((category==null)? " ":category) + "\n";
     }
 }
