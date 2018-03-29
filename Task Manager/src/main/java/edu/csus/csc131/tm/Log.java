@@ -3,7 +3,6 @@ package edu.csus.csc131.tm;
 import java.io.*;
 import java.util.*;
 
-
 public class Log
 {
     private String fileName;

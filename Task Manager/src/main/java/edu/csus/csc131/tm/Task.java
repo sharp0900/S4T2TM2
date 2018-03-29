@@ -67,7 +67,7 @@ public class Task
         this.category = category;
     }
 
-     public String toString() {
+    public String toString() {
         return "Task Name: " + ((name==null)? " ":name) + "\n" +
                 "Description: " + ((description==null)? " ":description) + "\n" +
                 "Size: " + ((size==null)? " ":size) + "\n" +

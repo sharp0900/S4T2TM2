@@ -62,15 +62,13 @@ public class Controller implements Initializable
     public void showTaskSummary()
     {
         Task t;
-        System.out.print("loading selected task summary: ");
-
+        
         //get selected name from the list of tasks
-
         String selectedTaskName = taskListView.getSelectionModel().getSelectedItem();
         if(selectedTaskName!=null)
         {
+            System.out.print("loading selected task summary: ");
             System.out.println(selectedTaskName);
-
             //load temp task with the selected tasks data
             t = getTask(selectedTaskName);
 

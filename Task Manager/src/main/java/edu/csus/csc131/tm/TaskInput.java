@@ -2,7 +2,6 @@ package edu.csus.csc131.tm;
 
 import javafx.scene.control.*;
 import javafx.scene.layout.GridPane;
-import javafx.util.Callback;
 
 import java.util.Optional;
 
@@ -62,17 +61,22 @@ public class TaskInput
         grid.add(nameLabel, 1, 1);
         grid.add(nameText, 2, 1);
 
+
         grid.add(descLabel, 1, 2);
         grid.add(descText, 2, 2);
+
 
         grid.add(sizeLabel, 1, 3);
         grid.add(sizeText, 2, 3);
 
+
         grid.add(deadLineLabel, 1, 4);
         grid.add(deadLineText, 2, 4);
 
+
         grid.add(categoryLabel, 1, 5);
         grid.add(categoryText, 2, 5);
+
 
         dialog.getDialogPane().setContent(grid);
 
