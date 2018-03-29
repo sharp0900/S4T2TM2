@@ -3,6 +3,7 @@ package edu.csus.csc131.tm;
 import javafx.scene.control.*;
 import javafx.scene.layout.GridPane;
 
+import java.time.LocalDate;
 import java.util.Optional;
 
 public class TaskInput
@@ -20,7 +21,7 @@ public class TaskInput
     private TextField categoryText;
 
     private DatePicker datePicker;
-
+    private LocalDate localDate;
     public TaskInput(Task task)
     {
         nameLabel = new Label("Task Name: ");
@@ -91,8 +92,10 @@ public class TaskInput
 
         //get the task information from the task window
         dialog.setResultConverter(b -> {
-            if(b==buttonTypeOk)
-                return new Task(nameText.getText(),descText.getText(),sizeText.getText(),deadLineText.getText(),categoryText.getText());
+            if(b==buttonTypeOk) {
+                localDate = datePicker.getValue();
+                return new Task(nameText.getText(), descText.getText(), sizeText.getText(), localDate.toString(), categoryText.getText());
+            }
             else return null;
         });
 

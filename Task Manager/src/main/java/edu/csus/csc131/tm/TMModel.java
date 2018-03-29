@@ -49,6 +49,16 @@ public class TMModel implements ITMMODEL
         return(l.renameTask(oldName, newName));
     }
 
+    public boolean categoryTask(String name, String category)
+    {
+        String format = String.format("%s %s category %s", LocalDateTime.now().toString(),name, category);
+        return (l.write(format));
+    }
+    public boolean deadLineTask(String name, String deadLine)
+    {
+        String format = String.format("%s %s deadLine %s", LocalDateTime.now().toString(),name, deadLine);
+        return (l.write(format));
+    }
     public String taskSize(String name)
     {
         String size = "";
@@ -217,15 +227,6 @@ public class TMModel implements ITMMODEL
         return timeList;
     }
 
-    @Override
-    public boolean categoryTask(String name, String category) {
-        return false;
-    }
-
-    @Override
-    public boolean deadLineTask(String name, String deadLine) {
-        return false;
-    }
 
     @Override
     public String taskCategory(String name) {
@@ -233,7 +234,9 @@ public class TMModel implements ITMMODEL
     }
 
     @Override
-    public String taskDeadLine(String name) {
+    public String taskDeadLine(String name)
+    {
+
         return null;
     }
 }
