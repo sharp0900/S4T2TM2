@@ -12,4 +12,4 @@
 - About should have a usage guide
 - Deadline needs a calender format or something
 - Clicking on a task should display all its info on the main panel, with an edit button (buggy)
-- Null fields should not be displayed, or show "none"
+- Null fields should not be displayed, or show "none"  --fixed -- victor
