@@ -13,12 +13,13 @@ public class Controller implements Initializable
 {
     private TMModel tmModel;
     private TreeSet<String> taskNames;
+    private Tooltip tooltip;
     //private LinkedList<Task> tasks;
 
     @FXML
-    public ListView<String> taskListView;
+    private ListView<String> taskListView;
     @FXML
-    public TextArea taskSummaryTextArea;
+    private TextArea taskSummaryTextArea;
 
     public void initialize(URL location, ResourceBundle resources)
     {
@@ -62,7 +63,7 @@ public class Controller implements Initializable
     public void showTaskSummary()
     {
         Task t;
-        
+
         //get selected name from the list of tasks
         String selectedTaskName = taskListView.getSelectionModel().getSelectedItem();
         if(selectedTaskName!=null)
@@ -167,4 +168,5 @@ public class Controller implements Initializable
         tmModel = new TMModel();
         showTaskSummary();
     }
+
 }

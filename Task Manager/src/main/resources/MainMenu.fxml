@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
@@ -8,7 +12,7 @@
             <children>
                 <MenuBar>
                     <menus>
-                        <Menu mnemonicParsing="false" text="File">
+                        <Menu mnemonicParsing="false" text="New">
                             <items>
                                 <MenuItem fx:id="newTaskMenuItem" mnemonicParsing="false" onAction="#newTaskButton" text="New Task" />
                             </items>
@@ -20,6 +24,61 @@
                         </Menu>
                     </menus>
                 </MenuBar>
+            <HBox spacing="2.0">
+               <children>
+                  <Button fx:id="startButton" mnemonicParsing="false" onAction="#startTask">
+                     <graphic>
+                        <ImageView>
+                           <image>
+                              <Image url="@Start.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+                  <Button fx:id="stopButton" mnemonicParsing="false" onAction="#stopTask">
+                     <graphic>
+                        <ImageView>
+                           <image>
+                              <Image url="@Stop.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+                  <Button fx:id="editbutton" mnemonicParsing="false" onAction="#editTaskButton">
+                     <graphic>
+                        <ImageView>
+                           <image>
+                              <Image url="@Edit.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+                  <Button fx:id="deleteButton" mnemonicParsing="false" onAction="#deleteTaskButton">
+                     <graphic>
+                        <ImageView>
+                           <image>
+                              <Image url="@Delete.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+                  <Button fx:id="calcButton" mnemonicParsing="false">
+                     <graphic>
+                        <ImageView>
+                           <image>
+                              <Image url="@Calculate.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+                  <Button fx:id="sortButton" mnemonicParsing="false">
+                     <graphic>
+                        <ImageView>
+                           <image>
+                              <Image url="@Sort.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="1.0" right="1.0" top="1.0" />
+               </VBox.margin>
+            </HBox>
             </children>
         </VBox>
     </top>
