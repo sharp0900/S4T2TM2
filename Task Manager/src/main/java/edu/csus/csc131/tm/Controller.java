@@ -108,6 +108,8 @@ public class Controller implements Initializable
 
         //get old task info
         selectedTask = taskListView.getSelectionModel().getSelectedItem();
+        if(selectedTask==null)
+            return;
         if(selectedTask != null)
             oldTask = getTask(selectedTask);
 
@@ -130,6 +132,8 @@ public class Controller implements Initializable
     {
         int selectedId;
         String selectedTask = taskListView.getSelectionModel().getSelectedItem();
+        if(selectedTask==null)
+            return;
         System.out.println(selectedTask + " deleted...");
 
         ObservableList<String> allTasks;
@@ -149,6 +153,8 @@ public class Controller implements Initializable
     public void startTask()
     {
         String selectedTask = taskListView.getSelectionModel().getSelectedItem();
+        if(selectedTask==null)
+            return;
         System.out.println(selectedTask + " started...");
 
         tmModel.startTask(selectedTask);
@@ -156,6 +162,8 @@ public class Controller implements Initializable
     public void stopTask()
     {
         String selectedTask = taskListView.getSelectionModel().getSelectedItem();
+        if(selectedTask==null)
+            return;
         System.out.println(selectedTask + " stopped...");
 
         tmModel.stopTask(selectedTask);
