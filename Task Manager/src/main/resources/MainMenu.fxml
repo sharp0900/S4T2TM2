@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.geometry.*?>
-<?import java.lang.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
@@ -24,8 +24,17 @@
                         </Menu>
                     </menus>
                 </MenuBar>
-            <HBox spacing="2.0">
-               <children>
+            <ToolBar>
+              <items>
+                  <Button fx:id="newTaskButton" mnemonicParsing="false" onAction="#newTaskButton">
+                     <graphic>
+                        <ImageView>
+                           <image>
+                              <Image url="@New.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
                   <Button fx:id="startButton" mnemonicParsing="false" onAction="#startTask">
                      <graphic>
                         <ImageView>
@@ -74,11 +83,8 @@
                            </image>
                         </ImageView>
                      </graphic></Button>
-               </children>
-               <VBox.margin>
-                  <Insets bottom="1.0" right="1.0" top="1.0" />
-               </VBox.margin>
-            </HBox>
+              </items>
+            </ToolBar>
             </children>
         </VBox>
     </top>
