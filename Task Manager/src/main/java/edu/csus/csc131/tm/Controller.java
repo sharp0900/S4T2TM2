@@ -56,7 +56,7 @@ public class Controller implements Initializable
         t.setSize(tmModel.taskSize(taskName));
         t.setElapsedTime(tmModel.taskElapsedTime(taskName));
         t.setDeadLine(tmModel.taskDeadLine(taskName));
-        t.setCategory(tmModel.taskDeadLine(taskName));
+        t.setCategory(tmModel.taskCategory(taskName));
         return t;
     }
     public void showTaskSummary()
