@@ -92,12 +92,32 @@ public class Controller implements Initializable
             tmModel.categoryTask(newTask.getName(), newTask.getCategory());
         }
     }
+    private boolean checkIfTaskExists(String taskName)
+    {
+        ObservableList<String> allTasks;
+        allTasks = taskListView.getItems();
+        boolean exists=false;
+        for(String s: allTasks)
+        {
+            if(s.equals(taskName))
+                exists=true;
+            else
+                exists=false;
+        }
+        return exists;
+    }
     public void newTaskButton()
     {
         TaskInput ti = new TaskInput();
         Task newTask = ti.displayTaskDialog("New Task");
 
-        makeNewTask(newTask);
+        if(newTask.getName()!=null)
+        {
+            if(checkIfTaskExists(newTask.getName()))
+                System.out.println("Task exists...edit instead");
+            else
+                makeNewTask(newTask);
+        }
         reloadTextArea();
     }
     public void editTaskButton()
@@ -120,11 +140,11 @@ public class Controller implements Initializable
         newTask = editWindow.displayTaskDialog("Edit Task");
         if(newTask!=null)
         {
-            if(newTask.getName() != null)
-                tmModel.renameTask(oldTask.getName(),newTask.getName());
-
-            deleteTaskButton();
-            makeNewTask(newTask);
+            if(newTask.getName() != null) {
+                tmModel.renameTask(oldTask.getName(), newTask.getName());
+                deleteTaskButton();
+                makeNewTask(newTask);
+            }
         }
         reloadTextArea();
     }

@@ -97,20 +97,22 @@
     </top>
     <left>
         <HBox BorderPane.alignment="CENTER">
-            <children>
-                <ListView fx:id="taskListView" onMouseClicked="#showTaskSummary" prefHeight="200.0" prefWidth="200.0">
-                    <contextMenu>
-                        <ContextMenu>
-                            <items>
-                                <MenuItem fx:id="taskListViewEdit" mnemonicParsing="false" onAction="#editTaskButton" text="Edit" />
-                                <MenuItem fx:id="taskListViewDelete" mnemonicParsing="false" onAction="#deleteTaskButton" text="Delete" />
-                                <MenuItem fx:id="taskListViewStart" mnemonicParsing="false" onAction="#startTask" text="Start" />
-                                <MenuItem fx:id="taskListViewStop" mnemonicParsing="false" onAction="#stopTask" text="stop" />
-                            </items>
-                        </ContextMenu>
-                    </contextMenu>
-                </ListView>
-            </children>
+            <ListView fx:id="taskListView" onMouseClicked="#showTaskSummary" prefHeight="200.0" prefWidth="200.0">
+                <contextMenu>
+                    <ContextMenu>
+                        <items>
+                            <MenuItem fx:id="taskListViewEdit" mnemonicParsing="false" onAction="#editTaskButton"
+                                      text="Edit"/>
+                            <MenuItem fx:id="taskListViewDelete" mnemonicParsing="false" onAction="#deleteTaskButton"
+                                      text="Delete"/>
+                            <MenuItem fx:id="taskListViewStart" mnemonicParsing="false" onAction="#startTask"
+                                      text="Start"/>
+                            <MenuItem fx:id="taskListViewStop" mnemonicParsing="false" onAction="#stopTask"
+                                      text="stop"/>
+                        </items>
+                    </ContextMenu>
+                </contextMenu>
+            </ListView>
         </HBox>
     </left>
     <center>
