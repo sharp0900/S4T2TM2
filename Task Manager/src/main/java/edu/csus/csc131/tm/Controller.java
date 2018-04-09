@@ -39,7 +39,7 @@ public class Controller implements Initializable
 
         }
         taskSummaryTextArea.setText("Select a Task or Create a new Task");
-        //taskSummaryTextArea.setLineWrap(true);
+        taskSummaryTextArea.setWrapText(true);
     }
     private LinkedList<Task> getAllTasks()
     {
