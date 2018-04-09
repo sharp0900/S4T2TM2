@@ -11,6 +11,8 @@ public class TaskAlert
     {
         boolean choice = false;
         Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+        alert.setHeaderText(null);
+        alert.setGraphic(null);
         alert.setTitle(title);
         alert.setContentText(message);
 
