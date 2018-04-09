@@ -1,8 +1,7 @@
-/*<<<<<<< HEAD
-something something css
-=======
-*/
+#taskSummaryTextArea {
+    -fx-font-family:Georgia;
+}
+
 #taskSummaryTextArea {
     -fx-font-size:14pt;
 }
-/*>>>>>>> f2e75ff1366f9b14101c99133a7ac6ba508c2d74*/

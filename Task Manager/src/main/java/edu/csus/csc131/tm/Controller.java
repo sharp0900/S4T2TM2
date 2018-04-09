@@ -118,7 +118,8 @@ public class Controller implements Initializable
     {
         TaskInput ti = new TaskInput();
         Task newTask = ti.displayTaskDialog("New Task");
-
+        if(newTask==null)
+            return;
         if(newTask.getName()!=null)
         {
             if(checkIfTaskExists(newTask.getName()))
@@ -158,25 +159,30 @@ public class Controller implements Initializable
     }
     public void deleteTaskButton()
     {
+        TaskAlert taskAlert = new TaskAlert();
+        boolean choice = false;
         int selectedId;
+
         String selectedTask = taskListView.getSelectionModel().getSelectedItem();
         if(selectedTask==null)
             return;
-        System.out.println(selectedTask + " deleted...");
 
-        ObservableList<String> allTasks;
-        allTasks = taskListView.getItems();
+        choice = taskAlert.display("Delete Task","Are you sure you wish to delete this task?");
 
-        selectedId = taskListView.getSelectionModel().getSelectedIndex();
-        allTasks.remove(selectedId);
-
-        tmModel.deleteTask(selectedTask);
-        taskSummaryTextArea.clear();
-        reloadTextArea();
+        if(choice) {
+            System.out.println(selectedTask + " deleted...");
+            ObservableList<String> allTasks;
+            allTasks = taskListView.getItems();
+            selectedId = taskListView.getSelectionModel().getSelectedIndex();
+            allTasks.remove(selectedId);
+            tmModel.deleteTask(selectedTask);
+            taskSummaryTextArea.clear();
+            reloadTextArea();
+        }
     }
     public void aboutButton()
     {
-        taskSummaryTextArea.setText("To start a new task, navigate to \"New > New Task\" or press the button on the far left.\n\n"+
+        taskSummaryTextArea.setText("To start a new task, navigate to \"New > New Task\" or press the + button on the far left.\n\n"+
             "To start a task, click on an existing task in left-hand menu and press the \"Start\" button on the toolbar. "+
                 "To stop a task in progress, click on the task in progress on the left-hand menu and press the \"Stop\""+
                 "button on the toolbar.\n");

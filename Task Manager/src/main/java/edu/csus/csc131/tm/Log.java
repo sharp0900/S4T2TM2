@@ -79,7 +79,7 @@ public class Log
     {
         File inputFile = new File(fileName);
         File tempFile = new File("tmp.txt");
-        boolean noErrors = true;
+        boolean noErrors;
         try
         {
             BufferedReader reader = new BufferedReader(new FileReader(inputFile));
@@ -107,9 +107,9 @@ public class Log
         catch (IOException io)
         {
             System.err.println("ERROR: could not open file");
-            noErrors=false;
         }
-        tempFile.renameTo(inputFile);
+        noErrors = tempFile.renameTo(inputFile);
+        tempFile.delete();
         return noErrors;
     }
 
@@ -117,7 +117,7 @@ public class Log
     {
         File inputFile = new File(fileName);
         File tempFile = new File("tmp.txt");
-        boolean b = true;
+        boolean noErrors;
         try
         {
             BufferedReader reader = new BufferedReader(new FileReader(inputFile));
@@ -141,10 +141,11 @@ public class Log
         catch (IOException io)
         {
             System.err.println("ERROR: could not open file");
-            b = false;
         }
-        tempFile.renameTo(inputFile);
-        return b;
+
+        noErrors = tempFile.renameTo(inputFile);
+        tempFile.delete();
+        return noErrors;
     }
     /*
      *
