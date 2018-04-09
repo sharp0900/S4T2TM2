@@ -1,5 +1,7 @@
 package edu.csus.csc131.tm;
 
+import javafx.beans.property.ObjectProperty;
+import javafx.event.EventHandler;
 import javafx.scene.control.*;
 import javafx.scene.layout.GridPane;
 
@@ -58,8 +60,7 @@ public class TaskInput
         Dialog<Task> dialog = new Dialog<>();
         dialog.setTitle(titleTxt);
         dialog.setHeaderText("Enter Task Information");
-        dialog.setResizable(true);
-
+        dialog.setResizable(false);
 
         GridPane grid = new GridPane();
         grid.add(nameLabel, 1, 1);
