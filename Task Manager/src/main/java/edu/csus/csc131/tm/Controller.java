@@ -59,6 +59,10 @@ public class Controller implements Initializable
         t.setCategory(tmModel.taskCategory(taskName));
         return t;
     }
+
+    /**
+     * Outputs to middle tray
+     */
     public void showTaskSummary()
     {
         Task t;
@@ -76,6 +80,7 @@ public class Controller implements Initializable
         }
         else taskSummaryTextArea.setText("Select a Task or Create a new Task");
     }
+
     private void makeNewTask(Task newTask)
     {
         if(newTask!=null)
@@ -168,7 +173,10 @@ public class Controller implements Initializable
     }
     public void aboutButton()
     {
-        //open window with usage
+        taskSummaryTextArea.setText("To start a new task, navigate to \"New > New Task\" or press the button on the far left.\n\n"+
+            "To start a task, click on an existing task in left-hand menu and press the \"Start\" button on the toolbar. "+
+                "To stop a task in progress, click on the task in progress on the left-hand menu and press the \"Stop\""+
+                "button on the toolbar.\n");
     }
     public void startTask()
     {
