@@ -159,21 +159,26 @@ public class Controller implements Initializable
     }
     public void deleteTaskButton()
     {
+        TaskAlert taskAlert = new TaskAlert();
+        boolean choice = false;
         int selectedId;
+
         String selectedTask = taskListView.getSelectionModel().getSelectedItem();
         if(selectedTask==null)
             return;
-        System.out.println(selectedTask + " deleted...");
 
-        ObservableList<String> allTasks;
-        allTasks = taskListView.getItems();
+        choice = taskAlert.display("Delete Task","Are you sure you wish to delete this task?");
 
-        selectedId = taskListView.getSelectionModel().getSelectedIndex();
-        allTasks.remove(selectedId);
-
-        tmModel.deleteTask(selectedTask);
-        taskSummaryTextArea.clear();
-        reloadTextArea();
+        if(choice) {
+            System.out.println(selectedTask + " deleted...");
+            ObservableList<String> allTasks;
+            allTasks = taskListView.getItems();
+            selectedId = taskListView.getSelectionModel().getSelectedIndex();
+            allTasks.remove(selectedId);
+            tmModel.deleteTask(selectedTask);
+            taskSummaryTextArea.clear();
+            reloadTextArea();
+        }
     }
     public void aboutButton()
     {

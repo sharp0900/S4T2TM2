@@ -7,12 +7,11 @@ import java.util.Optional;
 
 public class TaskAlert
 {
-    public boolean display(String title, String type, String message)
+    public boolean display(String title, String message)
     {
         boolean choice = false;
         Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
         alert.setTitle(title);
-        alert.setHeaderText(type);
         alert.setContentText(message);
 
         Optional<ButtonType> result = alert.showAndWait();
