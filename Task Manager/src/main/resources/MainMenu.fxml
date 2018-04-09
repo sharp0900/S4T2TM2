@@ -6,6 +6,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
+<?import java.net.URL?>
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.csus.csc131.tm.Controller">
     <top>
         <VBox BorderPane.alignment="CENTER">
@@ -116,6 +117,9 @@
         </HBox>
     </left>
     <center>
-        <TextArea fx:id="taskSummaryTextArea" editable="false" BorderPane.alignment="CENTER" />
+        <TextArea fx:id="taskSummaryTextArea" editable="false" BorderPane.alignment="CENTER"/>
     </center>
+    <stylesheets>
+    <URL value="@/MainMenu.css" />
+    </stylesheets>
 </BorderPane>

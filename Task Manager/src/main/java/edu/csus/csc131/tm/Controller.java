@@ -4,6 +4,8 @@ import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
+
+import javax.swing.*;
 import java.net.URL;
 import java.util.LinkedList;
 import java.util.ResourceBundle;
@@ -37,6 +39,7 @@ public class Controller implements Initializable
 
         }
         taskSummaryTextArea.setText("Select a Task or Create a new Task");
+        //taskSummaryTextArea.setLineWrap(true);
     }
     private LinkedList<Task> getAllTasks()
     {
