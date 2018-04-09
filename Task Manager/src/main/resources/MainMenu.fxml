@@ -109,7 +109,7 @@
                             <MenuItem fx:id="taskListViewStart" mnemonicParsing="false" onAction="#startTask"
                                       text="Start"/>
                             <MenuItem fx:id="taskListViewStop" mnemonicParsing="false" onAction="#stopTask"
-                                      text="stop"/>
+                                      text="Stop"/>
                         </items>
                     </ContextMenu>
                 </contextMenu>
