@@ -14,7 +14,10 @@ public class TaskManagerMain extends Application {
         window = primaryStage;
         Parent root = FXMLLoader.load(getClass().getResource("/MainMenu.fxml"));
         window.setTitle("Task Manager");
-        window.setScene(new Scene(root, 800, 500));
+        Scene scene= new Scene(root, 800, 500);
+        window.setScene(scene);
+        scene.getStylesheets().add(getClass().getResource("/MainMenu.css").toExternalForm());
+
         window.show();
     }
 

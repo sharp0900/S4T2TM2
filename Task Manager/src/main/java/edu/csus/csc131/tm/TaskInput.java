@@ -33,7 +33,8 @@ public class TaskInput
         descText = new TextField(task.getDescription());
         sizeText = new TextField(task.getSize());
         categoryText = new TextField(task.getCategory());
-        localDate = LocalDate.parse(task.getDeadLine());
+        if(!(task.getDeadLine().equals("deadLine")))
+            localDate = LocalDate.parse(task.getDeadLine());
         datePicker = new DatePicker(localDate);
     }
     public TaskInput()
