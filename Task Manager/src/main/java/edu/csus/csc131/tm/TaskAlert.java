@@ -9,7 +9,7 @@ public class TaskAlert
 {
     public boolean display(String title, String message)
     {
-        boolean choice = false;
+        boolean choice;
         Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
         alert.setHeaderText(null);
         alert.setGraphic(null);
