@@ -10,3 +10,4 @@
 - Null fields getting written
 - Won't save if date field is missing
 - Deleted tasks reappear when re launched
+- When user tries to add a task that already exist, it should prompt the user that said task already exist.
