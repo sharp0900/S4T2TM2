@@ -1,7 +1,6 @@
 package edu.csus.csc131.tm;
 
 import java.sql.*;
-import java.sql.Connection;
 
 public class DB
 {
@@ -20,7 +19,7 @@ public class DB
         System.out.println("Opened database successfully");
         return c;
     }
-    public void createTable(String args[])
+    public void createTable(String sql)
     {
         Connection c = null;
         Statement stmt = null;
@@ -29,13 +28,6 @@ public class DB
             c = connect();
             System.out.println("Opened database successfully");
             stmt = c.createStatement();
-            String sql = "create table task_info " +
-                         "(T_Name varchar(15) primary key," +
-                         " T_Describe varchar (255)," +
-                         " T_Catagory varchar(15)," +
-                         " T_Time long," +
-                         " T_Deadline varchar date," +
-                         " T_Size varchar(1))";
             stmt.executeUpdate(sql);
             stmt.close();
             c.close();
