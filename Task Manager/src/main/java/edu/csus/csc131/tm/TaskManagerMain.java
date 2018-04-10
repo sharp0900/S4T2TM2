@@ -17,6 +17,7 @@ public class TaskManagerMain extends Application {
         window.setTitle("Task Manager");
         Scene scene= new Scene(root, 800, 500);
         window.setScene(scene);
+        //add CSS
         scene.getStylesheets().add(getClass().getResource("/MainMenu.css").toExternalForm());
         window.getIcons().add(new Image("Edit.png"));
         window.show();

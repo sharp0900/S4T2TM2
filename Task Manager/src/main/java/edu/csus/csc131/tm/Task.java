@@ -71,8 +71,8 @@ public class Task
         return "Task Name: " + ((name.equals("taskName"))? " ":name) + "\n" +
                 "Description: " + ((description.equals(description))? " ":description) + "\n" +
                 "Size: " + ((size.equals("size"))? " ":size) + "\n" +
-                "DeadLine: " + ((deadLine.equals("deadLine"))? " ":deadLine) +"\n" +
-                "ElapsedTime: " + ((elapsedTime.equals("elapsedTime"))? " ":elapsedTime) + "\n" +
+                "Deadline: " + ((deadLine.equals("deadLine"))? " ":deadLine) +"\n" +
+                "Elapsed time: " + ((elapsedTime.equals("elapsedTime"))? " ":elapsedTime) + "\n" +
                 "Category: " + ((category.equals("category"))? " ":category) + "\n";
     }
 }
