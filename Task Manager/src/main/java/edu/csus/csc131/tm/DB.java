@@ -1,5 +1,6 @@
 package edu.csus.csc131.tm;
 
+import javax.swing.plaf.nimbus.State;
 import java.sql.*;
 
 public class DB
@@ -11,7 +12,7 @@ public class DB
 
         try {
             Class.forName("org.sqlite.JDBC");
-            c = DriverManager.getConnection("jdbc:sqlite:TM.db");
+            c = DriverManager.getConnection("jdbc:sqlite:TM.sqlite");
         } catch ( Exception e ) {
             System.err.println( e.getClass().getName() + ": " + e.getMessage() );
             System.exit(0);
@@ -45,8 +46,7 @@ public class DB
         try {
             c = connect();
             c.setAutoCommit(false);
-            System.out.println("Opened database successfully");
-
+            System.out.println("Opened insert database successfully");
             stmt = c.createStatement();
             stmt.executeUpdate(sql);
 
@@ -59,7 +59,7 @@ public class DB
         }
         System.out.println("Records created successfully");
     }
-    public String select(String args)
+    public String result()
     {
         Connection c = null;
         Statement stmt = null;
@@ -70,9 +70,21 @@ public class DB
             System.out.println("Opened database successfully");
 
             stmt = c.createStatement();
-            ResultSet rs = stmt.executeQuery( "SELECT * FROM COMPANY;" );
-            output=rs.toString();
+            ResultSet rs = stmt.executeQuery( "SELECT * FROM task_info;" );
+           // output=rs.toString();
 
+            while ( rs.next() ) {
+                String  name = rs.getString("name");
+                int age  = rs.getInt("age");
+                String  address = rs.getString("address");
+                float salary = rs.getFloat("salary");
+
+                System.out.println( "NAME = " + name );
+                System.out.println( "AGE = " + age );
+                System.out.println( "ADDRESS = " + address );
+                System.out.println( "SALARY = " + salary );
+                System.out.println();
+            }
             rs.close();
             stmt.close();
             c.close();
@@ -89,10 +101,10 @@ public class DB
         Statement stmt = null;
 
         try {
+
             c = connect();
             c.setAutoCommit(false);
-            System.out.println("Opened database successfully");
-
+            System.out.println("Opened Updatae database successfully");
             stmt = c.createStatement();
             stmt.executeUpdate(sql);
             c.commit();
@@ -106,6 +118,25 @@ public class DB
         System.out.println("Operation done successfully");
     }
     public void delete(String sql) {
-        update(sql);
+
+        Connection c = null;
+        Statement stmt = null;
+
+        try {
+            c = connect();
+            c.setAutoCommit(false);
+            System.out.println("Opened database successfully");
+            stmt = c.createStatement();
+            stmt.executeUpdate(sql);
+            c.commit();
+
+            stmt.close();
+            c.close();
+        } catch ( Exception e ) {
+            System.err.println( e.getClass().getName() + ": " + e.getMessage() );
+            System.exit(0);
+        }
+        System.out.println("Operation done successfully");
     }
+
 }
